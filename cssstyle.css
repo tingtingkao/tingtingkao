@@ -1,0 +1,644 @@
+/*css starts*/  
+        @keyframes guidebtn {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes guidebtn {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .guidebtn {animation: guidebtn 1.2s infinite alternate;-webkit-animation: guidebtn 1.2s infinite alternate;}
+
+        @keyframes skipbtn {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes skipbtn {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .skipbtn{animation: skipbtn 1.2s infinite alternate;-webkit-animation: skipbtn 1.2s infinite alternate;}
+
+        @keyframes P02_Btn01 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P02_Btn01 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P02_Btn01{animation: P02_Btn01 0.6s infinite alternate;-webkit-animation: P02_Btn01 0.6s infinite alternate;}
+
+        @keyframes P02_Btn02 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P02_Btn02 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P02_Btn02{animation: P02_Btn02 0.6s infinite alternate;-webkit-animation: P02_Btn02 0.6s infinite alternate;}
+
+        @keyframes P03_Btn01 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P03_Btn01 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P03_Btn01{animation: P03_Btn01 0.6s infinite alternate;-webkit-animation: P03_Btn01 0.6s infinite alternate;}
+
+        @keyframes P03_Btn02 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P03_Btn02 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P03_Btn02{animation: P03_Btn02 0.6s infinite alternate;-webkit-animation: P03_Btn02 0.6s infinite alternate;}
+
+        @keyframes P03_Btn03 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P03_Btn03 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P03_Btn03{animation: P03_Btn03 0.6s infinite alternate;-webkit-animation: P03_Btn03 0.6s infinite alternate;}
+
+        @keyframes P04_Btn01 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P04_Btn01 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P04_Btn01{animation: P04_Btn01 0.6s infinite alternate;-webkit-animation: P04_Btn01 0.6s infinite alternate;}
+
+        @keyframes P04_Btn02 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P04_Btn02 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P04_Btn02{animation: P04_Btn02 0.6s infinite alternate;-webkit-animation: P04_Btn02 0.6s infinite alternate;}
+
+        @keyframes P04_Btn03 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        @-webkit-keyframes P04_Btn03 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
+        .P04_Btn03{animation: P04_Btn03 0.6s infinite alternate;-webkit-animation: P04_Btn03 0.6s infinite alternate;}
+
+     
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, 
+cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;}   
+
+body{background-color:#052261;
+     background-image: url(images/LineBg.svg);
+     background-repeat: repeat;
+     max-width: 1920px;
+     font-family:'Roboto', Verdana, sans-serif, 'Noto Sans CJK TC', 'Microsoft JhengHei';
+     display: flex;
+     flex-direction: column;
+}
+
+/*icons & fonts*/
+@font-face {
+font-family: 'Material Icons';
+font-style: normal;
+font-weight: 400;
+src: url(font/GochiHand-Regular.eot); /* For IE6-8 */
+src: local('Material Icons'),
+     local('MaterialIcons-Regular'),
+     url(font/materialdesignicons-webfont.woff2) format('woff2'),
+     url(font/materialdesignicons-webfont.woff) format('woff'),
+     url(font/materialdesignicons-webfont.ttf) format('truetype');
+}
+
+.material-icons {
+     font-family: 'Material Icons';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 24px;  /* Preferred icon size */
+     display: inline-block;
+     line-height: 1;
+     text-transform: none;
+     letter-spacing: normal;
+     word-wrap: normal;
+     white-space: nowrap;
+     direction: ltr;
+   
+     /* Support for all WebKit browsers. */
+     -webkit-font-smoothing: antialiased;
+     /* Support for Safari and Chrome. */
+     text-rendering: optimizeLegibility;
+   
+     /* Support for Firefox. */
+     -moz-osx-font-smoothing: grayscale;
+   
+     /* Support for IE. */
+     font-feature-settings: 'liga';
+   }
+
+/*stick btn starts*/
+.stickyBtn {position: -webkit-sticky;
+     position: sticky;
+     top:36%;
+     width: 60px;}    
+         
+ul{ list-style: none;
+     margin: 0;
+     padding: 0;
+     display: block;
+     width: 5%;
+     height: 158px;
+     margin: 0 left;}
+li{float: left;
+     margin: 0;
+     padding: 0;
+     border: 0;}
+        
+.top{background-image: url("images/Float_btn.svg");
+     height: 25px;
+     width: 60px;}
+        
+.behance a{display: block;
+     width: 60px;
+     height: 38px;
+     background-image: url("images/D_Behance_icon.svg");
+     text-indent: -9999px;
+     line-height: 100px;}
+.behance a:hover{background-image: url("images/H_Behance_icon.svg");}
+        
+.linkedin a{display: block;
+     width: 60px;
+     height: 45px;
+     background-image: url("images/D_Linkind_icon.svg");
+     text-indent: -9999px;
+     line-height: 100px;}
+.linkedin a:hover{background-image: url("images/H_Linkind_icon.svg");}
+        
+.about a{display: block;
+     width: 60px;
+     height: 49px;
+     background-image: url("images/D_About_icon.svg");
+     text-indent: -9999px;
+     line-height: 100px;
+     color: #333;}
+.about a:hover{background-image: url("images/H_About_icon.svg");}  
+
+.overlay {position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;}
+.overlay:target {visibility: visible;
+  opacity: 1;}
+.popup {
+  margin: 70px auto;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  width: 80%;
+  height: 86vh;
+  position: relative;
+  transition: all 2s ease-in-out;
+  z-index: 999;
+  overflow: hidden;}
+
+.popup .head{
+  padding: 20px;
+  height: 45px;}
+ 
+.popup .close {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  z-index: 999;}
+.popup .content {
+  height: 80%;
+  overflow: auto;
+  padding: 20px;
+}        
+/*.popup .content, p{
+     font-size: 1.6 rem;
+     line-height: 1.8 rem;
+     padding-bottom: 2%;
+}*/
+
+.P04_Btn01{
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding: 11px 8px;
+     border-radius: 100%;
+     background-color: #F03978;
+     transition: background .3s;
+     vertical-align: middle;
+     cursor: pointer;
+     position: absolute;
+     left:43%;
+     top: 88%;
+     z-index: 10;}  
+.P04_Btn01:hover {background: #FF699D;
+     opacity: 0.8;}   
+
+.P04_Btn02{
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding: 11px 8px;
+     border-radius: 100%;
+     background-color: #F03978;
+     transition: background .3s;
+     vertical-align: middle;
+     cursor: pointer;
+     position: absolute;
+     left:16%;
+     top: 81%;
+     z-index: 10;}  
+.P04_Btn02:hover {background: #FF699D;
+     opacity: 0.8;}    
+
+.mail_03{background-image: url("images/Emailme.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 16%;
+     height:262px;
+     cursor: pointer;
+     position: absolute;
+     left:90%;
+     top: 43%;
+     text-indent: -9999px;} 
+
+.SecretBtn {background-image: url("images/D_mail_02.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 12%;
+     height: 325px;
+     cursor: pointer;
+     position: absolute;
+     left:74%;
+     top: 88%;
+     z-index: 10;
+     /*text-indent: -9999px;
+     display: block;*/
+     background-size: contain;}   
+.SecretBtn:hover {background-image: url("images/H_mail_02.png");
+     background-repeat: no-repeat;}
+
+/* Panel03 starts */
+.P03_Btn01{display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding: 11px 8px;
+     border-radius: 100%;
+     background-color: #F03978;
+     transition: background .3s;
+     vertical-align: middle;
+     cursor: pointer;
+     position: absolute;
+     left:63%;
+     top: 27%;
+     z-index: 10;}    
+.P03_Btn01:hover {background: #FF699D;
+     opacity: 0.8;}  
+
+.P03_Btn02{display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding: 11px 8px;
+     border-radius: 100%;
+     background-color: #F03978;
+     transition: background .3s;
+     vertical-align: middle;
+     cursor: pointer;
+     position: absolute;
+     left:30%;
+     top: 62%;
+     z-index: 10;}    
+.P03_Btn02:hover {background: #FF699D;
+     opacity: 0.8;}  
+
+.mail_02 {background-image: url("images/D_mail_03.png");
+     background-repeat: no-repeat;
+     width: 10%;
+     height: 125px;
+     position: absolute;
+     background-size: contain;
+     cursor: pointer;
+     position: absolute;
+     left:67%;
+     top: 76%;
+     z-index: 10;}   
+.mail_02:hover {background-image: url("images/H_mail_03.png");
+     background-repeat: no-repeat;
+     width: 10%;
+     height: 125px;}
+
+/* Panel02 starts */
+.P02_Btn01{display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding: 11px 8px;
+     border-radius: 100%;
+     background-color: #F03978;
+     transition: background .3s;
+     vertical-align: middle;
+     cursor: pointer;
+     position: absolute;
+     left:12%;
+     top: 39%;
+     z-index: 10;}     
+.P02_Btn01:hover {background: #FF699D;
+     opacity: 0.8;} 
+
+.P02_Btn02{display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding: 11px 8px;
+     border-radius: 100%;
+     background-color: #F03978;
+     transition: background .3s;
+     vertical-align: middle;
+     cursor: pointer;
+     position: absolute;
+     left:30%;
+     top: 18%;
+     z-index: 10;}     
+.P02_Btn02:hover {background: #FF699D;
+     opacity: 0.8;} 
+
+.mail_01{background-image: url("images/D_mail_01.png");
+     background-repeat: no-repeat;
+     width: 8%;
+     height: 125px;
+     position: absolute;
+     cursor: pointer;
+     right: 15%;
+     top: 30%;
+     z-index: 10;
+     background-size: contain;}
+.mail_01:hover {background-image: url("images/H_mail_01.png");
+     background-repeat: no-repeat;
+     width: 8%;
+     height: 125px;}
+
+/* Panel01 starts */
+.img-fluid {width: 100%;
+     height: auto;}
+
+img{max-width: 100%; height: auto !important;}
+
+.guidebtn {margin: 3% 0 3% 0;} 
+.guidebtn a{color:  white;
+     text-decoration: none;
+     font-size: 1.4rem;
+     border: white 3px solid;
+     padding: 10px;
+     border-radius: 6px;
+     font-weight: bold;}
+.guidebtn a:hover{color:#54C0F5;
+     text-decoration: none;
+     border: #54C0F5 3px solid;
+     padding: 10px;
+     border-radius: 6px;
+     font-weight: bold;}
+.material-icons{
+     vertical-align:middle;
+     margin-right: 6px;
+     margin-bottom:3px ;
+     font-size: 2.2rem;}
+
+.skipbtn{
+     margin: auto 0;
+     width: 100%;
+     margin: 3% 0% 3% 30%;}   
+.skipbtn a{color:  white;
+     text-decoration: none;
+     font-size: 2rem;
+     border: white 3px solid;
+     border-radius: 6px;
+     font-weight: bold;
+     padding:6px;}
+.skipbtn a:hover{color:#54C0F5;
+     text-decoration: none;
+     border: #54C0F5 3px solid;
+     padding: 6px;
+     border-radius: 6px;
+     font-weight: bold;
+     text-align: center;}
+.material-icons{
+     vertical-align:middle;
+     margin-right: 6px;
+     margin-bottom:3px ;
+     font-size: 2.2rem;}
+
+/*parallax scrolling starts*/
+.panelCon{position: fixed;
+     bottom: 0;
+     left:0;
+     width: 100%;
+     margin: 0;
+     padding: 0;}
+
+.panel {width: 100%;}
+
+#pane-1 {max-height: 1024px;}
+
+  /*-- Animation Keyframes --*/
+  @media (max-width:768px){
+.guidebtn a{font-size: 0.8rem;
+     border-radius: 4px;
+     margin: 8% 0 6% 0;
+     padding: 5px;}
+.guidebtn a:hover{
+     padding: 5px;}
+
+.skipbtn a{font-size: 0.8rem;
+     border-radius: 4px;
+     margin: 20% 0% 4% -10%;}
+.material-icons{
+     vertical-align:middle;
+     margin-right: 6px;
+     margin-bottom:3px ;
+     font-size: 1.4rem;}
+
+.stickyBtn {display: none;}    
+
+  }
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+     position: relative; /* opinion 1 */
+   }
+   
+   /* Applies to all tooltips */
+   [tooltip]::before,
+   [tooltip]::after {
+     text-transform: none; /* opinion 2 */
+     font-size: .9em; /* opinion 3 */
+     line-height: 1;
+     user-select: none;
+     pointer-events: none;
+     position: absolute;
+     display: none;
+     opacity: 0;
+   }
+   [tooltip]::before {
+     content: '';
+     border: 5px solid transparent; /* opinion 4 */
+     z-index: 1001; /* absurdity 1 */
+   }
+   [tooltip]::after {
+     content: attr(tooltip); /* magic! */
+     
+     /* most of the rest of this is opinion 
+     font-family: Helvetica, sans-serif;*/
+     text-align: center;
+     
+     /* 
+       Let the content set the size of the tooltips 
+       but this will also keep them from being obnoxious
+       */
+     min-width: 3em;
+     max-width: 21em;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     padding: 1ch 1.5ch;
+     border-radius: .3ch;
+     box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+     background: #333;
+     color: #fff;
+     z-index: 1000; /* absurdity 2 */
+   }
+   
+   /* Make the tooltips respond to hover */
+   [tooltip]:hover::before,
+   [tooltip]:hover::after {
+     display: block;
+   }
+   
+   /* don't show empty tooltips */
+   [tooltip='']::before,
+   [tooltip='']::after {
+     display: none !important;
+   }
+   
+   /* FLOW: UP */
+   [tooltip]:not([flow])::before,
+   [tooltip][flow^="up"]::before {
+     bottom: 100%;
+     border-bottom-width: 0;
+     border-top-color: #333;
+   }
+   [tooltip]:not([flow])::after,
+   [tooltip][flow^="up"]::after {
+     bottom: calc(100% + 5px);
+   }
+   [tooltip]:not([flow])::before,
+   [tooltip]:not([flow])::after,
+   [tooltip][flow^="up"]::before,
+   [tooltip][flow^="up"]::after {
+     left: 50%;
+     transform: translate(-50%, -.5em);
+   }
+   
+   /* FLOW: DOWN */
+   [tooltip][flow^="down"]::before {
+     top: 100%;
+     border-top-width: 0;
+     border-bottom-color: #333;
+   }
+   [tooltip][flow^="down"]::after {
+     top: calc(100% + 5px);
+   }
+   [tooltip][flow^="down"]::before,
+   [tooltip][flow^="down"]::after {
+     left: 50%;
+     transform: translate(-50%, .5em);
+   }
+   
+   /* FLOW: LEFT */
+   [tooltip][flow^="left"]::before {
+     top: 50%;
+     border-right-width: 0;
+     border-left-color: #333;
+     left: calc(0em - 5px);
+     transform: translate(-.5em, -50%);
+   }
+   [tooltip][flow^="left"]::after {
+     top: 50%;
+     right: calc(100% + 5px);
+     transform: translate(-.5em, -50%);
+   }
+   
+   /* FLOW: RIGHT */
+   [tooltip][flow^="right"]::before {
+     top: 50%;
+     border-left-width: 0;
+     border-right-color: #333;
+     right: calc(0em - 5px);
+     transform: translate(.5em, -50%);
+   }
+   [tooltip][flow^="right"]::after {
+     /*top: 50%;*/
+     left: calc(100% + 5px);
+     transform: translate(.5em, -50%);
+   }
+   
+   /* KEYFRAMES */
+   @keyframes tooltips-vert {
+     to {
+       opacity: .9;
+       transform: translate(-50%, 0);
+     }
+   }
+   
+   @keyframes tooltips-horz {
+     to {
+       opacity: .9;
+       transform: translate(0, -50%);
+     }
+   }
+   
+   /* FX All The Things */ 
+   [tooltip]:not([flow]):hover::before,
+   [tooltip]:not([flow]):hover::after,
+   [tooltip][flow^="up"]:hover::before,
+   [tooltip][flow^="up"]:hover::after,
+   [tooltip][flow^="down"]:hover::before,
+   [tooltip][flow^="down"]:hover::after {
+     animation: tooltips-vert 300ms ease-out forwards;
+   }
+   
+   [tooltip][flow^="left"]:hover::before,
+   [tooltip][flow^="left"]:hover::after,
+   [tooltip][flow^="right"]:hover::before,
+   [tooltip][flow^="right"]:hover::after {
+     animation: tooltips-horz 300ms ease-out forwards;
+   }
+   
+   aside {
+     flex: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #49b293;
+     color: #fff;
+     padding: 1em;
+   }
+
+   aside a {
+     color: inherit;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
+     padding: .4em 1em;
+   }
+
+   /*Portfolio content*/
+.head_wrap{margin: auto;
+     display: flex;}
+
+.big_title{font-size: 2rem;
+     color: #224383;
+     margin-bottom: 3%;}
+
+.head_left{
+     width: 100%;}
+
+.s_title{
+     color: #F69C81;
+     font-size: 0.8rem;
+     margin-bottom: 1%;}
+
+.head_content{font-size: 1rem;
+     font-weight:400;
+     color: #333;
+     line-height: 1.8rem;
+     letter-spacing: 0.1rem;
+     word-spacing: 1.2rem;}
+
+.img_wrap_s{max-width: 36%;}
+.img_wrap_m{max-width: 50%;}
+.img_wrap_l{max-width: 62%;}
+.img_wrap_xl{max-width: 90%;}
+
+.content_center{text-align:center;
+     width: 100%;}
+
+.gray_bg{background-color: #F2F2F2;
+     padding: 4%;
+     border-radius: 10px;
+     text-align:center;}
