@@ -24,6 +24,13 @@
     $(document).ready(function () {
         //$(".panel").height(winHeight);
         $("body").height($(".container").innerHeight());
+
+        $('.close').click(function () {
+            $('.overlay').css('display', 'none');
+        });
+        $('.button').click(function () {
+            $($(this).attr('href')).css('display', '');
+        });
     });
     
     window.addEventListener('resize', function (event) {
@@ -50,61 +57,64 @@
                     <div class="popup">
                         <div class="head">
                             <h2>克羅埃西亞國家觀光旅遊局內容媒體策略</h2>
-                            <a class="close" href="#">&times;</a>
+                            <a class="close">&times;</a>
                         </div>
                         <div class="content">
-                            <div class="content_center" style="margin-bottom: 5%;">
-                                <div class="img_wrap_xl"><img src="images/travel@3x.png"></div> 
+                            <div style="display: flex;">
+                                <div class="tag">內容研究</div>
+                                <div class="tag">人物誌</div>
+                                <div class="tag">客戶旅程</div>
+                                <div class="tag">商業分析</div>
+                                <div class="tag">媒體策略</div>
+                            </div>
+
+                            <div class="content_center" style="margin-bottom: 6%;">
+                                <div class="img_wrap_xl" style="margin: auto;"><img src="images/travel@3x.png"></div> 
+                                <div class="s_title">Brief</div>   
                                 <div class="big_title">克羅埃西亞國家觀光旅遊局內容媒體策略</div>                                                                
-                                <div class="s_title">Recap</div>   
-<div class="head_content">近年來越來越多的中國旅客前往歐洲旅遊，克羅埃西亞亦從中獲得不少的旅客，只是相較其它歐洲國家，前往克羅埃西亞的中國旅客仍稀少，因此克羅埃西亞
-國家觀光旅遊局希望藉由數位媒體平台來吸引更多的中國觀光客。</div>
+<div class="head_content">近年來越來越多的中國旅客前往歐洲旅遊，克羅埃西亞亦從中獲得不少的旅客，只是相較其它歐洲國家，前往克羅埃西亞的中國旅客仍稀少，因此克羅埃西亞國家觀光旅遊局希望藉由數位媒體平台來吸引更多的中國觀光客。</div>
                             </div><!--content center--> 
 
-                            <div class="content_center" style="margin-bottom: 5%;">
+                            <div class="content_center" style="margin-bottom: 6%;">
                                 <div class="s_title">Research</div>    
                                 <div class="big_title">目前克羅埃西亞國家觀光旅遊局遇到的問題</div>  
-                            <div class="head_content" style="margin-top:1% ;">1.	缺少對於受眾目標（中國人）的相關資訊和知識（只簡略的人口統計資料、包含年齡、旅遊形式）<br>
-                                2.	品牌知名度低，超過40%的中國人沒聽過克羅埃西亞這個國家<br>
-                                3.	沒有任何的媒體策略，克羅埃西亞國家觀光旅遊局沒有計劃性的在中國推廣旅遊<br> <br>                                                            
-一開始克羅埃西亞國家觀光旅遊局將目標制定於“提高中國旅客前往克羅埃西亞遊玩的人數”，但在研究過相關的資料（包含行銷媒體策略、公司人員組織編制、
-中國媒體現況），建議將目標修改為“藉由媒體內容策略來提升中國人對於克羅埃西亞的認識與了解”。</div>
+                            <div class="head_content" style="margin-top:1% ;">
+                                1.缺少對於受眾目標(中國人)的相關資訊和知識(只簡略的人口統計資料、包含年齡、旅遊形式)<br>
+                                2.品牌知名度低，超過40%的中國人沒聽過克羅埃西亞這個國家<br>
+                                3.沒有任何的媒體策略，克羅埃西亞國家觀光旅遊局沒有擬定相關策略來推動中國市場的媒體行銷<br><br>                                                            
+一開始克羅埃西亞國家觀光旅遊局將目標制定於“提高中國旅客前往克羅埃西亞遊玩的人數”，但在與主管洽談、研究過相關的資料後(包含目前的媒體策略、公司人員組織編制、中國媒體現況)，建議將目標改為“藉由媒體內容策略來提升中國人對於克羅埃西亞的認識與了解”。</div>
 
                             <div class="head_content" style="margin-top:3% ;">克羅埃西亞國家觀光旅遊局將目前造訪克羅埃西亞的中國旅客分為三大類群：<br><br>
-                                1.	旅遊團體（多為年長者，因語言、文化和環境不熟悉，選擇跟隨旅行團）<br>
-                                2.	家族旅遊（中產階級居多，多半會帶小孩）<br>
-                                 3.	個人自助行（年輕上班族、學生居多，語言能力強，且使用網路找尋資料）<br></div>
+                                1.旅遊團體(多為年長者，因語言、文化和環境不熟悉，選擇跟隨旅行團)<br>
+                                2.家族旅遊(中產階級居多，多半會帶小孩)<br>
+                                3.個人自助行(年輕上班族、學生居多，語言能力強，且使用網路找尋資料)<br></div>
                             </div><!--head left-->     
 
-                            <div class="head_wrap" style="margin-bottom: 5%;">                       
+                            <div class="head_wrap" style="margin-bottom: 6%;">                       
                                 <div class="head_left"> 
-                                <div class="big_title">為合適的使用者設計</div>
-                                <div class="s_title">Recap</div>                                        
-                                <div class="head_content" style="padding:2% 4% 0% 0%;">
-經過討論，建議將目標集中於個人自助行的年輕人，因此目標善於使用網路收尋，相較其它兩個旅遊類群較容易接觸（考量到行銷成本、公司資源和媒體環境等...）
-根據人口統計數據、心理特徵、價值觀、旅遊需求和動機來製作出基本的persona，之後為了更深入了解persona前往旅遊的原因、理由（why & how）、顧客旅程，因此進行了面談研究。</div>
+                                <div class="s_title">Persona</div>   
+                                <div class="big_title">為合適的使用者設計</div>                                     
+                                <div class="head_content" style="padding:2% 6% 0% 0%;">
+經過討論，建議將目標集中於個人自助行的年輕人，因此目標善於使用網路收尋，相較其它兩個旅遊類群較容易接觸(考量到行銷成本、公司資源和媒體環境等...)根據人口統計數據、心理特徵、價值觀、旅遊需求和動機來製作出基本的persona，之後為了更深入了解persona前往旅遊的原因、理由(why & how)、顧客旅程、使用平台，因此進行了質量研究(深入訪談)。</div>
                                 </div>
-                                <div class="img_wrap_l"><img src="images/phone@3x.png"></div>
+                                <div class="img_wrap_m"><img src="images/persona_02@3x.png"></div>
                             </div><!--head wrap-->
 
-                            <div class="head_wrap" style="margin-bottom: 4%;">
-                                <div class="img_wrap_l"><img src="images/phone@3x.png"></div>                                                       
-                                <div class="head_left"> 
-                                    <div class="big_title">讓品牌常駐受眾者的心</div>
-                                    <div class="s_title">Pitchbook</div>                                        
-                                    <div class="head_content" style="padding:2% 4% 0% 0%;">
-在深度了解受眾目標（persona）後，便規劃了一系列的內容行銷活動來提高克羅埃西亞的旅遊知名度，活動如下：<br>
-先展開為期半年的英雄內容活動，藉此引起受眾對於克羅埃西亞這個國家的興趣和喜愛，之後會與中國各大旅遊平台合作推出廣告，此行為為讓受眾有機更進一步
-了解克羅埃西亞這個國家、有哪些旅遊地點和歷史文化景點，最後也會讓受眾定期收到克羅埃西亞的觀光旅遊訊息和資料，藉此讓受眾記住克羅埃西亞這個國家的特色與美景。</div>                                    
+                            <div class="head_wrap" style="margin-bottom: 6%;">
+                                <div class="img_wrap_m" style="padding: 0% 4% 0 0;"><img src="images/pitchbook@3x.png"></div>                                                       
+                                <div class="head_left">
+                                    <div class="s_title">Pitchbook</div>  
+                                    <div class="big_title">讓品牌常駐受眾者的心</div>                                       
+                                    <div class="head_content">
+在深入了解目標受眾後，便依據得到的sweet spot和痛點來規劃了一系列的內容媒體策略活動來提高克羅埃西亞的旅遊知名度，活動如下：<br>
+先展開為期半年的英雄內容活動(請網紅拍片推廣克羅埃西亞)，激起受眾的興趣和喜愛，便與中國各大旅遊平台合作推出廣告，讓受眾更進一步了解克羅埃西亞的旅遊地點和歷史文化，每個活動皆鼓勵受眾訂閱克羅埃西亞的觀光旅遊訊息和資料，藉此維持受眾的興趣。</div>                                    
                                 </div>
                             </div><!--head wrap-->
 
                             <div class="content_center">
                                 <div class="s_title">Limitations and Further Research</div>                                   
-                                <div class="big_title">局限性和建議</div> 
-<div class="head_content">因為地理限制，無法將研究目標(中國年輕人)集中在中國一線城市，因中國一、二線人口的收入和旅遊可支配金額皆不同，前往的旅遊景點和消費習慣可能存在
-落差，舉例來說: 一線城市之青年可能因為收入，社經地位較高，會傾向於精品名牌店購物，而非當地特色攤販。而未來若需要進一步研究，建議克羅埃西亞觀
-光旅遊局詳細的審視所有的競爭國家的媒體操作策略，藉此來思考克羅埃西亞的旅遊行銷定位。</div>                                                       
+                                <div class="big_title">研究限制和未來發展</div> 
+<div class="head_content">因為地理限制，無法將研究目標集中在中國一線城市，因一、二線人口的收入和旅遊可支配金額皆不同，前往的旅遊景點和消費習慣可能存在落差，舉例來說: 一線城市之青年可能因為收入，社經地位較高，會傾向於精品名牌店購物，而非當地特色攤販。而未來若需要進一步研究，建議克羅埃西亞觀光旅遊局詳細的審視研究所有的競爭國家的媒體操作策略，藉研究結果來參考和定位克羅埃西亞的旅遊媒體形象和策略。</div>                                                       
                             </div><!--content center--> 
 
                         </div>
@@ -119,25 +129,26 @@
                     <div class="popup">
                         <div class="head">
                             <h2>Anota專案創建系統</h2>
-                            <a class="close" href="#">&times;</a>
+                            <a class="close">&times;</a>
                         </div>
                         <div class="content">
 
-                            <div class="head_wrap" style="margin-bottom:5%;">                       
+                            <div class="head_wrap" style="margin-bottom:6%;">                       
                                 <div class="head_left"> 
-                                <div class="big_title">Anota專案創建系統</div>
-                                <div class="s_title">Recap</div>                                        
-                                <div class="head_content" style="padding:2% 8% 0% 0%;">
-專為醫⽣、醫療研究⽣、醫療相關從業⼈員設計的醫療文字分析軟體，使用此軟體為醫療名詞做資料標註，即會自動產製AI模型並改善現有文字分析流程，使標註時間大幅縮短，
-此軟體亦有創建和管理專案的功能。</div>
+                                <div class="s_title">Brief</div>
+                                <div class="big_title">Anota專案創建系統</div>                                        
+                                <div class="head_content" style="padding:2% 6% 0% 0%;">
+專為醫⽣、醫療研究⽣、醫療相關從業⼈員設計的醫療文字分析軟體，使用此軟體為醫療名詞做資料標註，即會自動產製AI模型並改善現有文字分析流程，使標註時間大幅縮短，此軟體亦有創建和管理專案的功能。</div>
                                 </div>                    
                                 <div class="img_wrap_s"><img src="images/browser@3x.png"></div>
                             </div><!--head wrap-->
 
-                            <div class="content_center" style="margin-bottom:5%;">
+                            <div class="content_center" style="margin-bottom:6%;">
                                 <div class="s_title">Persona</div>   
                                 <div class="big_title">為不同的使用者量身打造</div>
-                                <div class="img_wrap_xl"><img src="images/persona@3x.png"></div> 
+                                <div class="head_content"  style="margin-bottom: 3%;">Anota的主要使用者為專案製作者、標註人員和專案管理員，使用者的年齡、背景知識和介面操作習慣差距非常大，通常只有專案管理員具備足夠的專業醫療知識，因此在介面設計上除了要引導使用者外，亦需適時解釋相關醫療知識、增設步驟說明等，以防使用者在操作時感到焦躁不安或是對於使用流程產生疑慮。
+                                </div>
+                                <div class="img_wrap_xl" style="margin: auto;"><img src="images/persona@3x.png"></div> 
                             </div><!--content center--> 
 
                             <div class="head_wrap" style="margin-bottom: 5%;">
@@ -146,7 +157,7 @@
                                     <div class="s_title">Wireframes</div>                                     
                                     <div class="big_title">用線框與客戶一同思考與探討流程</div>                                        
                                     <div class="head_content">                            
-在了解主要使用者的使用情境和參與的流程後，便開始繪製Flowchart與客戶確定軟體的使用流程，亦使用線框來和客戶確認頁面的基本佈局、畫面和功能。
+再了解主要使用者的使用情境和參與的流程後，便開始繪製Flowchart與客戶確定軟體的使用流程，亦使用線框來和客戶確認頁面的基本佈局、畫面和功能。
                                     </div>
                                 </div><!--head left-->
                             </div><!--head wrap-->
@@ -154,12 +165,11 @@
                             <div class="content_center" style="margin-bottom: 5%;">
                                 <div class="s_title">Visual Design</div>   
                                 <div class="big_title">UI風格制定</div>
-<div class="head_content">雖有明確的使用者，但三個主要的使用者的知識背景、年齡和使用習慣皆有所落差，在設計UX和UI時以減少各個使用者的焦慮和使用障礙為主(goal)，畫面和
-使用流程上力求簡單清楚不複雜(Solutions)，以便讓各個使用者皆能快速上手和了解此軟體的使用方法(kpi著重於使用者的任務完成率: 效率、完成率、錯誤率，而介面上的高效和易懂也為評估之一)。</div>
+<div class="head_content">畫面使用大量的藍色，除藍色易讓使用者聯想到這是醫療相關的專業軟體外，亦有讓使用者情緒淡定和冷靜的效果，此外因畫面上有許多的表格和資訊，設計上力求標題內文層級分明、畫面簡單清楚不複雜，以便讓各個使用者皆能馬上閱讀到重要資訊(kpi著重於使用者的任務完成率: 效率、完成率、錯誤率，而介面上的高效和易懂也為評估之一)。</div>
                             </div><!--content center--> 
 
                             <div class="head_wrap" style="margin-bottom: 5%;">
-                                <div class="img_wrap_l" style="margin-right:6% ;"><img src="images/wireframe@3x.png"></div>                       
+                                <div class="img_wrap_m" style="margin-right:6% ;"><img src="images/wireframe@3x.png"></div>                       
                                 
                                 <div class="head_left">
                                     <div class="s_title">Design Library</div>                                     
@@ -170,13 +180,12 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
                                 </div><!--head left-->
                             </div><!--head wrap-->
 
-                            <div class="img_wrap_l" style="margin-bottom: 8%; text-align: center; width: 100%;"><img src="images/anota@3x.png"></div>
+                            <div class="img_wrap_xl" style="margin: auto;"><img src="images/anota@3x.png"></div>
                               
-                            <div class="gray_bg">
+                            <div class="gray_bg" style="margin: 5% 0 5% 0;">
                                 <div class="s_title">Reflection</div>  
                                 <div class="big_title">作品回顧</div> 
-<div class="head_content">因時間限制，無法添加導引動畫來教導使用者更瞭解如何使用此軟體，此外因合約限制無法置入數據解析軟體和與使用者進一步交流並獲得回饋，因此使用者的任務完成率和畫面易讀性仍須待專案管理人回報
-使用狀況，並進一步解析和改進。</div>
+<div class="head_content">因時間限制，無法添加導引步驟的動畫來讓使用者更瞭解如何使用此軟體，雖有步驟說明和相關知識解說，但因使用者第一次使用此軟體，再加上產品為需具備醫療知識才使用的軟體，專案製作者和標註人員仍會對於流程感到遲疑。</div>
                             </div>
 
                         </div>
@@ -190,7 +199,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
                     <div class="popup">
                         <div class="head">
                             <h2>Here i am</h2>
-                            <a class="close" href="#">&times;</a>
+                            <a class="close">&times;</a>
                         </div>
                         <div class="content">
 
@@ -200,7 +209,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
         </div><!--row-->  
 
     <div class="row justify-content-center">
-        <img src="images/SecondFloorImage.png" class="img-fluid">  
+        <div class="col" style="outline: none;"><img src="images/SecondFloorImage.png" class="img-fluid"></div>  
     </div><!--row-->  
 </div><!--thirdfloor ends-->
  
@@ -213,7 +222,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
                 <div class="popup">
                     <div class="head">
                         <h2>Here i am</h2>
-                        <a class="close" href="#">&times;</a>
+                        <a class="close">&times;</a>
                     </div>
                     <div class="content">
                         Thank to pop me out of that button, but now i'm done so you can close this window.
@@ -228,7 +237,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
                 <div class="popup">
                     <div class="head">
                         <h2>Here i am</h2>
-                        <a class="close" href="#">&times;</a>
+                        <a class="close">&times;</a>
                     </div>
                     <div class="content">
                         Thank to pop me out of that button, but now i'm done so you can close this window.
@@ -240,7 +249,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
     </div>
 
     <div class="row justify-content-center">
-        <img src="images/FirstFloorImage.png" class="img-fluid">
+        <div class="col"><img src="images/FirstFloorImage.png" class="img-fluid"></div>
     </div><!--row-->                
 </div><!--first floor ends-->
 
@@ -254,56 +263,60 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
             <div class="popup">
                 <div class="head">
                     <h2>誠品獨立音樂活動頁</h2>
-                    <a class="close" href="#">&times;</a>
+                    <a class="close">&times;</a>
                 </div>
                 <div class="content">
-                    <div class="content_center">
-                        <div class="big_title">誠品獨立音樂活動頁</div>
-                        <div class="s_title">Recap</div>       
-<div class="head_content" style="margin-bottom: 3%;">誠品音樂館成立於1999年，網羅全球各地的世界音樂、後搖滾、前衛創作與台灣地下樂團等音樂型態。而此活動頁的目的為讓更多的網路使用者意識到
-誠品網路書店亦可購買台灣的硬地音樂，不須親自到誠品音樂館試聽，即可線上選購。</div>
-                        <div class="img_wrap_xl" style="margin-bottom: 5%;"><img src="images/music@3x.png"></div> 
+                    <div class="content_center" style="margin-bottom: 5%">
+                        <div class="s_title">Brief</div>  
+                        <div class="big_title">誠品獨立音樂活動頁</div>     
+<div class="head_content" style="margin-bottom: 3%;">誠品音樂館成立於1999年，網羅全球各地的世界音樂、後搖滾、前衛創作與台灣地下樂團等音樂型態。而此活動頁的目的為讓更多的網路使用者意識到誠品網路書店亦可購買台灣的硬地音樂，不須親自到誠品音樂館試聽，即可線上選購。</div>
+                        <div class="img_wrap_xl" style="margin: auto;"><img src="images/music@3x.png"></div> 
                     </div><!--head left--> 
 
                     <div class="head_wrap">
                         <div class="img_wrap_s" style="margin-right:6% ;"><img src="images/asian@3x.png"></div>                       
                         <div class="head_left"> 
-                            <div class="s_title">Persona</div>                                        
+                            <div class="s_title">Persona</div> 
+                            <div class="big_title">誠品獨立音樂活動頁</div>                                        
                             <div class="head_content"> 
-            <b>喜歡:</b><br>藝術、設計和人文、擴展自已看待事情的視野和深度、
-            關心社會議題和國際情勢，對生活總抱持著正面態度，注重生活品質，喜歡有質感的生活格調。</div>                                
+            喜歡:<br>藝術、設計和人文、擴展自已看待事情的視野和深度、關心社會議題和國際情勢，對生活總抱持著正面態度，注重生活品質，喜歡有質感的生活格調。</div>                                
                             <div style=" display: flex; margin:2% 0% 10% 0%;">                           
-                                <div class="head_content" style="width: 45%; margin-right: 10%;"><b>到誠品線上購物的理由:</b><br>
-                                    1.	網站的視覺設計很漂亮<br>
-                                    2.	活動的企劃和文案很有趣<br>
-                                    3.	原本就是實體店面的顧客<br>
-                                    4.	支持誠品的理念</div>
+                                <div class="head_content" style="width: 45%; margin-right: 10%;">到誠品線上購物的理由:<br>
+                                    1.網站視覺設計漂亮<br>
+                                    2.活動企劃和文案很有趣<br>
+                                    3.原本就是實體店面的顧客<br>
+                                    4.支持誠品的理念</div>
                                 <div class="head_content" style="width: 45%;"><b>希望誠品線上改進的地方:</b><br>                                    
-                                    1. 提供較多折扣和優惠<br>
-                                    2. 商品的描述和介紹只有文字，不夠吸引<br>
-                                    3. 能觀看其他人對此商品的評價和感想<br>
+                                    1.提供較多折扣和優惠<br>
+                                    2.增加商品的描述<br>
+                                    3.觀看購買者的評價和感想<br>
                                 </div>
                             </div>
                         </div><!--head left-->
-                    </div><!--head wrap--> 
+                    </div><!--head wrap-->               
 
                     <div class="content_center" style="margin-bottom: 5%;">
                         <div class="s_title">Brand Identity</div> 
                         <div class="big_title">將品牌形象具體化</div>        
-<div class="head_content">誠品以文化和人文生活為其品牌核心，誠品音樂更致力於引進豐富多元且深度的音樂視野，在了解完使用者和品牌核心價值後，網站風格希望呈現出台
-灣獨立音樂的冷靜放鬆、柔和優美的音樂風格，並藉此頁面讓更多的使用者了解誠品網路書店也有販賣獨立音樂的專輯，並讓更多品味和理念與誠品相
-近的愛樂人接觸到誠品音樂這個品牌（增加線上曝光量）。</div>
+<div class="head_content">誠品以文化和人文生活為其品牌核心，誠品音樂更致力於引進豐富多元且深度的音樂視野，再了解完使用者和品牌核心價值後，網站風格希望呈現出台灣獨立音樂的冷靜放鬆、柔和優美的音樂風格，並藉此頁面讓更多的使用者了解誠品網路書店也有販賣獨立音樂的專輯，並讓更多品味和理念與誠品相近的愛樂人接觸到誠品音樂這個品牌(KPI為增加訪客數)。</div>
                     </div><!--content center--> 
 
-                    <div class="head_wrap"  style="margin-bottom:5%;">
+                    
+                    <div style=" display: flex;">                           
+                        <div class="head_content" style="width: 60%; margin-right: 5%;"><img src="images/garamond @3x.png"></div>
+                        <div class="head_content" style="width: 40%;">
+                            <div class="s_title">Typography & Color</div> 
+                            <div class="big_title">字體與顏色</div> 
+                            <img src="images/color@3x.png"></div>
+                    </div>
+
+                    <div class="head_wrap"  style="margin:5% 0 5%; 0">
                         <div class="img_wrap_l"><img src="images/browser03@3x.png"></div>                       
                         <div class="head_left"  style="margin-left:2%;">
                             <div class="s_title">Visual Design</div>
                             <div class="big_title">品牌形象轉換UI設計</div>                                         
                             <div class="head_content">                            
-先了解台灣獨立音樂的特性，並從中找出台灣獨立音樂與誠品書店的品牌形象相似之處，用那些關鍵字來發想並尋找範例和資料，之後動手畫草圖
-並與ＰＭ討論合適的設計風格和檢討如何讓畫面更符合台灣獨立音樂的冷靜放鬆、柔和優美的音樂風格，進入畫面設計時，會找ＰＭ和其他設計師
-來討論並確立設計的風格沒有偏離公司的品牌形象和製作主題的調性，網頁上線後也持續追蹤此活動頁的銷售金額和曝光率有沒有達到標準。
+先了解台灣獨立音樂的特性，並從中找出台灣獨立音樂與誠品書店的品牌形象相似之處，用那些關鍵字來發想並尋找範例和資料，之後動手畫草圖並與ＰＭ討論合適的設計風格和檢討如何讓畫面更符合台灣獨立音樂的冷靜放鬆、柔和優美的音樂風格，進入畫面設計時，會找ＰＭ和其他設計師來討論並確立設計的風格沒有偏離公司的品牌形象和製作主題的調性，網頁上線後也持續追蹤此活動頁的銷售金額和曝光率有沒有達到標準。
                             </div>
                         </div><!--head left-->
                     </div><!--head wrap-->
@@ -312,8 +325,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
                         <div class="s_title">Reflection</div>
                         <div class="big_title">作品回顧</div>
                         <div class="head_content">   
-在製作此登陸頁時因為時間和排程等限制，來不急執行A/B測試和動眼收尋，藉此得知使用者更精準的喜好和消費習慣是否如問券上所言。此外，因大
-部分的專輯為新發售，且登陸頁曝光時間短、上架時間快速無法即時收集網友的星等評級和留言，藉此來消彌使用者的疑慮和增加他們的購買意願。</div>
+在製作此登陸頁時因為時間和排程等限制，來不急執行A/B測試、動眼追蹤及分析，藉此得知使用者更精準的喜好和消費習慣是否如問券上所言。此外，因大部分的專輯為新發售，且登陸頁曝光時間短、上架時間快速無法即時收集網友的星等評級和留言，藉此來消彌使用者的疑慮和增加他們的購買意願。</div>
                     </div>
 
                 </div>
@@ -328,37 +340,35 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
             <div class="popup">
                 <div class="head">
                     <h2>誠品電子藝術報</h2>
-                    <a class="close" href="#">&times;</a>
+                    <a class="close">&times;</a>
                 </div>
                 <div class="content">
                     <div class="head_wrap">                       
-                        <div class="head_left"> 
-                        <div class="big_title">誠品電子藝術報</div>
-                        <div class="s_title">Recap</div>                                        
-                        <div class="head_content" style="padding:2% 4% 0% 0%;">誠品藝術報為群發型郵件 (One-to-Many Emails)，
-主要功能為與客戶定期聯絡，並告知本月有什麼新品，將誠品的品牌概念：藝術與人文融入生活，並與更多的讀者（使用者）分享，而此電子報的KPI為
-後續點擊率和轉換率。</div>
+                        <div class="head_left">
+                        <div class="s_title">Breif</div>   
+                        <div class="big_title">誠品電子藝術報</div>                                     
+                        <div class="head_content" style="padding:2% 4% 0% 0%;">誠品藝術報為群發型郵件(One-to-Many Emails)，主要功能為與客戶定期聯絡，並告知本月有什麼新品，將誠品的品牌概念：藝術與人文融入生活，並與更多的讀者(使用者)分享，而此電子報的KPI為後續點擊率和轉換率。</div>
                         </div>                    
                         <div class="img_wrap_m" style="margin-bottom: 6%;"><img src="images/browser03@3x.png"></div>
                     </div><!--head wrap-->
 
                     <div class="head_wrap">
                         <div class="img_wrap_s" style="margin-right:6% ;"><img src="images/asian@3x.png"></div>                       
-                        <div class="head_left"> 
+                        <div class="head_left">
                             <div class="s_title">Persona</div>                                        
+                            <div class="big_title">誠品電子藝術報</div> 
                             <div class="head_content"> 
-            <b>喜歡:</b><br>藝術、設計和人文、擴展自已看待事情的視野和深度、
-            關心社會議題和國際情勢，對生活總抱持著正面態度，注重生活品質，喜歡有質感的生活格調。</div>                                
+            喜歡:<br>藝術、設計和人文、擴展自已看待事情的視野和深度、關心社會議題和國際情勢，對生活總抱持著正面態度，注重生活品質，喜歡有質感的生活格調。</div>                                
                             <div style=" display: flex; margin:2% 0% 10% 0%;">                           
-                                <div class="head_content" style="width: 45%; margin-right: 10%;"><b>到誠品線上購物的理由:</b><br>
-                                    1.	網站的視覺設計很漂亮<br>
-                                    2.	活動的企劃和文案很有趣<br>
-                                    3.	原本就是實體店面的顧客<br>
-                                    4.	支持誠品的理念</div>
+                                <div class="head_content" style="width: 45%; margin-right: 10%;">到誠品線上購物的理由:<br>
+                                    1.網站視覺設計漂亮<br>
+                                    2.活動企劃和文案很有趣<br>
+                                    3.原本就是實體店面的顧客<br>
+                                    4.支持誠品的理念</div>
                                 <div class="head_content" style="width: 45%;"><b>希望誠品線上改進的地方:</b><br>                                    
-                                    1. 提供較多折扣和優惠<br>
-                                    2. 商品的描述和介紹只有文字，不夠吸引<br>
-                                    3. 能觀看其他人對此商品的評價和感想<br>
+                                    1.提供較多折扣和優惠<br>
+                                    2.增加商品的描述<br>
+                                    3.觀看購買者的評價和感想<br>
                                 </div>
                             </div>
                         </div><!--head left-->
@@ -368,50 +378,44 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
                         <div class="s_title">Brand Concept</div>
                         <div class="big_title">延續品牌風格和核心價值</div>
                         <div class="head_content">                        
-誠品將人文、藝術、創意三個元素定為其品牌核心，將其品牌價值延伸進入生活，電子報除了作為定期與客戶聯繫和曝光的通路外，誠品藉此工具讓使用者
-更了解誠品的品牌核心和價值，作為與讀者溝通橋樑的電子報，畫面著重在營造出讀者想放心、安靜、定下心來好好閱讀和思考藝術的氛圍，除此之外電子
-報的標題、內文在此也是重點。</div>
+誠品將人文、藝術、創意三個元素定為其品牌核心，將其品牌價值延伸進入生活，電子報除了作為定期與客戶聯繫和曝光的通路外，誠品藉此工具讓使用者更了解誠品的品牌核心和價值，作為與讀者溝通橋樑的電子報，畫面著重在營造出讀者想放心、安靜、定下心來好好閱讀和思考藝術的氛圍，除此之外電子報的標題、內文在此也是重點。</div>
                     </div><!--content center--> 
 
                     <div class="head_wrap" style="margin-bottom: 5%;">
                         <div class="img_wrap_m" style="margin-right:6% ;"><img src="images/Roboto@3x.png"></div>                       
                         <div class="head_left"> 
-                            <div class="s_title">Style Direction</div>                                        
+                            <div class="s_title">Style Direction</div>
+                            <div class="big_title">延續品牌風格和核心價值</div>                                        
                             <div class="head_content">                            
-主視覺和標體選用日本字體來做搭配，讓整個畫面更融合營造出更典雅的份圍，而為了讓讀者可以輕鬆閱讀和在各個系統上皆可輕鬆閱讀，內文選用了可讀
-性較高的內建字體Robor regular。</div>
+主視覺和標體選用日本字體來做搭配，讓整個畫面更融合營造出更典雅的份圍，而為了讓讀者可以輕鬆閱讀和在各個系統上皆可輕鬆閱讀，內文選用了可讀性較高的內建字體Robor。</div>
                         </div><!--head left-->
                     </div><!--head wrap-->
 
                     <div class="content_center" style="margin-bottom: 5%;">
                         <div class="s_title">Overall Email Experience</div>   
                         <div class="big_title">電子報的設計攻略</div>
-                        <div class="img_wrap_xl"><img src="images/mail@3x.png"></div> 
+                        <div class="img_wrap_xl" style="margin: auto;"><img src="images/mail@3x.png"></div> 
                     </div><!--head left--> 
 
                     <div class="head_wrap" style="margin-bottom: 5%;">
-                        <div class="img_wrap_l" style="margin-right:6% ;"><img src="images/art@3x.png"></div>                       
+                        <div class="img_wrap_l" style="margin-right:4% ;"><img src="images/art@3x.png"></div>                       
                         <div class="head_left">
                             <div class="s_title">Process</div>  
                             <div class="big_title">設計過程和風格選擇</div>                                       
                             <div class="head_content">                            
-在了解此電子報的目的和功能性後，我先從自己看待藝術的印象著手，在此以文藝復興時代為發想並延伸，在過程中也製作過不同風格和氛圍的畫面，考量到
-誠品的品牌價值和電子報的主要功能＿帶領讀者深入探討藝術，我在視覺畫面上增加更多細節和置入古典元素來讓讀者了解，即便是看似簡單的藝術或是派系
-，也是經由研讀經典和啟發而獲得的。                               
+在了解此電子報的目的和功能性後，我先從自己看待藝術的印象著手，在此以文藝復興時代為發想並延伸，在過程中也製作不同風格和氛圍的畫面，考量到誠品的品牌價值和電子報的主要功能＿帶領讀者深入探討藝術，我在視覺畫面上增加許多細節和置入古典元素來讓讀者了解，即便是看似簡單的藝術或是派系，也是經由研讀經典啟發而獲得的。                               
                             </div>
                         </div><!--head left-->
                     </div><!--head wrap-->
 
                     <div class="head_wrap">                       
-                        <div class="head_left"> 
-                        <div class="big_title">策略修正</div>
-                        <div class="s_title">Reflection</div>                                        
+                        <div class="head_left">
+                        <div class="s_title">Reflection</div>  
+                        <div class="big_title">策略修正</div>                                       
                         <div class="head_content">
-2015年時，超過65%的台灣人會仍使用電腦閱讀電子郵件，並進點擊相關的內容資訊，因此在和PM討論過後決定此電子郵件仍以電腦版為主，但到了2018年，
-台灣人使用行動裝置閱讀電子郵件的人數攀升數倍，若此電子郵件要重新設計的話，在UI設計上會優先考量到手機版，而其內容文字也會大幅減少，以防在手
-機版時難以閱讀。</div>
+2015年時，超過65%的台灣人使用電腦閱讀電子郵件，並進點擊相關的內容資訊，因此在和PM討論過後決定此電子郵件仍以電腦版為主，但到了2018年，使用行動裝置來閱讀電子郵件的台灣人數攀升數倍，若此電子郵件要重新設計的話，在UI設計上會優先考量到手機版，而其內容文字也會大幅減少，以防在手機版時難以閱讀。</div>
                         </div>
-                        <div class="img_wrap_s" style="margin-bottom: 4%;"><img src="images/phone@3x.png"></div>
+                        <div class="img_wrap_s" style="margin:0% 2% 4% 6%;"><img src="images/phone@3x.png"></div>
                     </div><!--head wrap-->
                    
                 </div>
@@ -422,7 +426,7 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
     </div>    
 
     <div class="row justify-content-center">
-        <img src="images/GrandFloorImage.png" class="img-fluid">
+        <div class="col" style="outline: none;"><img src="images/GrandFloorImage.png" class="img-fluid"></div>
     </div><!--row-->
 
 </div><!--grandfloor ends-->
@@ -466,8 +470,8 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
 <div class="stickyBtn"><!--flex buttons starts-->
     <ul>
       <li class="top"></li>
-      <li class="behance"><span tooltip="Behance" flow="right"><a href="#" title="Behance">behance</a></span></li>
-      <li class="linkedin"><span tooltip="Linkedin" flow="right"><a href="#" title="Linkedin">Linkedin</a></span></li>
+      <li class="behance"><span tooltip="Behance" flow="right"><a href="https://www.behance.net/tingting1117" target="_blank" title="Behance">behance</a></span></li>
+      <li class="linkedin"><span tooltip="Linkedin" flow="right"><a href="https://www.linkedin.com/in/ting-ting-kao-058339161/" target="_blank" title="Linkedin">Linkedin</a></span></li>
       <li class="about"><span tooltip="About Me" flow="right"><a class="button" href="#popup1" title="AboutMe">AboutMe</a></span></li>
    </ul>
 </div><!--flex buttons ends-->
@@ -476,24 +480,24 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
         <div class="popup">
             <div class="head">
                 <h2>Hi there</h2>
-                <a class="close" href="#">&times;</a>
+                <a class="close">&times;</a>
             </div>
             <div class="content">
-                <div data-aos="fade-up" data-aos-duration="500"><p>謝謝你造訪我的作品集網站，想知道我的經驗和專長，歡迎觀看我的<a href="#">LinkedIn</a>
-                頁面，在此，我想跟你分享我的興趣和個人特質，讓你更認識我一點。</p>
+                <div><p>謝謝你造訪我的作品集網站，想知道我的經驗和專長，歡迎觀看我的<a href="#">LinkedIn</a>
+                頁面，在此，我想跟你分享我的興趣和個人特質，讓你更認識我一點。<br><br>
                 <p>我是個渴求知識的人。透過閱讀專欄報導和收聽知識型的podcast節目，我能更容易了解事件的脈絡、
                 利益關係人的想法和觀點。而我也會主動搜尋相關事件人事物的背景和歷 史脈絡，幫助我更全面的看
-                待每一件事。</p></div>
-                <div data-aos="fade-up" data-aos-duration="500"><p>在家當個廢青很不錯。但我更喜歡上健身房重訓、出外騎腳踏車、爬山、攀岩和嘗試不同的極限運動，
+                待每一件事。<br><br>
+                在家當個廢青很不錯。但我更喜歡上健身房重訓、出外騎腳踏車、爬山、攀岩和嘗試不同的極限運動，
                 運動不但幫助我放鬆，也培養我堅強的意志力!每次在工作上遇到挫折時我都會鼓勵自己，之前都經歷
-                許多挑戰了，還怕這小事!!</p></div>
-                <div data-aos="fade-up" data-aos-duration="500"><p>同時我也積極參與ux、ui/ux相關的課程、研討會等。並且研讀工作相關的書籍。當聽到別人分享 自身
+                許多挑戰了，還怕這小事!!<br><br>
+                同時我也積極參與ux、ui/ux相關的課程、研討會等。並且研讀工作相關的書籍。當聽到別人分享 自身
                 經驗時，我都感到很開心，因為這幫助我用不同人的角度和思維去思考，在工作中，很多時候需要的是
                 同理心，再傾聽和瞭解對方的想法後，才能進一步去思考對方的需求和問題，並獲得信任，然後提出有
-                價值的反饋和建議。</p></div>
-                <div data-aos="fade-up" data-aos-duration="500">朋友都說我是個善於傾聽、安慰和引導別人且內心溫柔善良的人。當然我不完美，很常有冒牌者症候群，
+                價值的反饋和建議。<br><br>
+                朋友都說我是個善於傾聽、安慰和引導別人且內心溫柔善良的人。當然我不完美，很常有冒牌者症候群，
                 有時也會膽怯和拖延，所以我都會給自己設定時間和目標，若是結果不如預期中美好，我會詢問朋友、找
-                尋資料和思考如何做得更好，因為人生沒有標準答案，唯有發展出自己的策略與對應方案。然後不斷的迭代與測試。</div>
+                尋資料和思考如何做得更好，因為人生沒有標準答案，唯有發展出自己的策略與對應方案。然後不斷的迭代與測試。</p></div>
             </div>
         </div>
     </div>
@@ -501,25 +505,27 @@ Anota的頁面數量眾多且UI元件重複性高，因此我們建立了可系�
 <!-- walkthrough -->
 <div id="walkthrough">
 	<div id="type-modal" style="display:none;">
-		<p class="tooltipTitle">Hi 歡迎來到我的作品集網站</p>
-        <p>使用滑鼠往下滑時會看到這樣的按鈕，你可以按此按鈕觀看作品</p>
+		<p class="tooltipTitle">Hi 我是Tingting，歡迎來到我的作品集</p>
+        <p>請使用滑鼠滾輪往下滑，會看到此按鈕 <img src="images/icon.svg"> 請點選它來觀看我的作品
+        </p>
 	</div>
 
     <div id="step2" style="display:none;">
-        <p>你也可以點選這些按鈕來看我的<a href="#">LinkedIn Page</a>、Behance和自介<br>
-            另外我在這網站中藏了很多小秘密<br>歡迎探索和尋寶</p>
+        <p>也可以點選左邊的 <img src="images/Behance.svg"> <img src="images/AboutMe.svg"> <img src="images/Linkedin.svg">
+             來看我的LinkedIn Page、Behance和自介<br>
+            另外在這網站中藏了許多小秘密，歡迎探索和尋寶</p>
        <!--<br>
         <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>-->
 	</div>
 
     <div id="step3" style="display:none;">
-        <p>你也可以按此按紐跳過，直接觀看我的作品，但我會有點傷心就是了....</p>
+        <p>你也可以按 <img src=images/skip_icon.png> 跳過<br>直接到Dribbble觀看作品，但我會傷心就是...</p>
        <!--<br>
         <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>-->
 	</div>
 
 	<div id="done-walkthrough" style="display:none;">
-		<p class="tooltipTitle">最後～希望你喜歡整個網站的體驗過程，並享受我的概念和想法！</p>
+        <p>最後～使用Google Chrome瀏覽器將得到前所未見的良好體驗喔！希望你享受我的概念和想法！</p>
         <!--<br>
         <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>-->
 	</div>

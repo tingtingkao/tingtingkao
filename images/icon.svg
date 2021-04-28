@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>photo_camera-24px copy 4</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="workFirst01" transform="translate(-24.000000, -44.000000)">
+            <g id="photo_camera-24px-copy-4" transform="translate(24.000000, 44.000000)">
+                <circle id="Oval" fill="#ED4F85" cx="16.5" cy="16.5" r="16.5"></circle>
+                <polygon id="Path" points="5.26666667 4.8 28.2666667 4.8 28.2666667 27.8 5.26666667 27.8"></polygon>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="16.7666667" cy="17.3" r="3.5"></circle>
+                <path d="M13.65,7 L11.9115,9 L8.9,9 C7.855,9 7,9.9 7,11 L7,23 C7,24.1 7.855,25 8.9,25 L24.1,25 C25.145,25 26,24.1 26,23 L26,11 C26,9.9 25.145,9 24.1,9 L21.0885,9 L19.35,7 L13.65,7 Z M17,22 C14.24,22 12,19.76 12,17 C12,14.24 14.24,12 17,12 C19.76,12 22,14.24 22,17 C22,19.76 19.76,22 17,22 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

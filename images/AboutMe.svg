@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AboutMe</title>
+    <defs>
+        <path d="M19.9996028,14.3012821 C16.6856424,14.3012821 14,12.0281433 14,9.22402291 C14,6.41990256 16.6856424,4.1474359 19.9996028,4.1474359 C23.3135632,4.1474359 26,6.41990256 26,9.22402291 C26,12.0281433 23.3135632,14.3012821 19.9996028,14.3012821 Z" id="path-1"></path>
+        <filter x="-41.7%" y="-49.2%" width="216.7%" height="237.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.2   0 0 0 0 0.2  0 0 0 0.702305507 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M19.4996254,15.9935897 L19.4996254,15.9935897 C13.7009669,15.9935897 9,19.8948899 9,24.7071567 C9,25.9700736 10.2333107,26.9935897 11.7550933,26.9935897 L27.2441574,26.9935897 C28.7666893,26.9935897 30,25.9700736 30,24.7071567 C30,19.8948899 25.2990331,15.9935897 19.4996254,15.9935897" id="path-3"></path>
+        <filter x="-23.8%" y="-45.5%" width="166.7%" height="227.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.2   0 0 0 0 0.2  0 0 0 0.702305507 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MainBtn" transform="translate(-10.000000, -112.000000)">
+            <g id="AboutMe" transform="translate(10.000000, 112.000000)">
+                <rect id="Rectangle" fill="#4B4B4B" x="0" y="0" width="40" height="33" rx="6"></rect>
+                <g id="Fill-94">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#B0B0B0" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Fill-95">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#B0B0B0" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
