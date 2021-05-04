@@ -191,6 +191,11 @@ li{float: left;
   overflow: auto;
   padding: 48px;
 }        
+/*.popup .content, p{
+     font-size: 1.6 rem;
+     line-height: 1.8 rem;
+     padding-bottom: 2%;
+}*/
 
 .P04_Btn01{
      display: inline-block;
@@ -203,8 +208,8 @@ li{float: left;
      vertical-align: middle;
      cursor: pointer;
      position: absolute;
-     left:43%;
-     top: 88%;
+     left:54%;
+     top: 79%;
      z-index: 10;}  
 .P04_Btn01:hover {background: #FF699D;
      opacity: 0.8;}   
@@ -220,8 +225,8 @@ li{float: left;
      vertical-align: middle;
      cursor: pointer;
      position: absolute;
-     left:16%;
-     top: 81%;
+     left:26%;
+     top: 75%;
      z-index: 10;}  
 .P04_Btn02:hover {background: #FF699D;
      opacity: 0.8;}    
@@ -247,8 +252,8 @@ li{float: left;
      left:74%;
      top: 88%;
      z-index: 10;
-     background-size: contain;
-     animation: blinker 2s linear infinite;}   
+     animation: blinker 2s linear infinite;
+     background-size: contain;}   
 .SecretBtn:hover {background-image: url("images/H_mail_02.png");
      background-repeat: no-repeat;}
 
@@ -263,8 +268,8 @@ li{float: left;
      vertical-align: middle;
      cursor: pointer;
      position: absolute;
-     left:63%;
-     top: 27%;
+     left:43%;
+     top: 46%;
      z-index: 10;}    
 .P03_Btn01:hover {background: #FF699D;
      opacity: 0.8;}  
@@ -313,8 +318,8 @@ li{float: left;
      vertical-align: middle;
      cursor: pointer;
      position: absolute;
-     left:12%;
-     top: 39%;
+     left:17%;
+     top: 9%;
      z-index: 10;}     
 .P02_Btn01:hover {background: #FF699D;
      opacity: 0.8;} 
@@ -329,13 +334,13 @@ li{float: left;
      vertical-align: middle;
      cursor: pointer;
      position: absolute;
-     left:30%;
-     top: 18%;
+     left:35%;
+     top: 16%;
      z-index: 10;}     
 .P02_Btn02:hover {background: #FF699D;
      opacity: 0.8;} 
 
-.mail_01{background-image: url("images/D_mail_01.png");
+#mail_01{background-image: url("images/D_mail_01.png");
      background-repeat: no-repeat;
      width: 8%;
      height: 125px;
@@ -346,7 +351,7 @@ li{float: left;
      z-index: 10;
      background-size: contain;
      animation: blinker 2s linear infinite;}
-.mail_01:hover {background-image: url("images/H_mail_01.png");
+#mail_01:hover {background-image: url("images/H_mail_01.png");
      background-repeat: no-repeat;
      width: 8%;
      height: 125px;}
@@ -398,7 +403,7 @@ img{max-width: 100%; height: auto !important;}
 .material-icons{
      vertical-align:middle;
      margin-right: 6px;
-     margin-bottom:-5px ;
+     margin-bottom:0px ;
      font-size: 2.2rem;}
 
 /*parallax scrolling starts*/
@@ -432,8 +437,7 @@ img{max-width: 100%; height: auto !important;}
      font-size: 1.4rem;}
 
 .stickyBtn {display: none;}    
-
-  }
+}
 
 /* START TOOLTIP STYLES */
 [tooltip] {
@@ -614,21 +618,13 @@ img{max-width: 100%; height: auto !important;}
      border-radius: 10px;
      text-align:center;}
 
-.tag{background-color: #BBBBBB;
-     padding: 4px 10px;
-     color: #fff;
-     text-align: center;
-     border-radius: 20px;
-     margin: 0px 16px 16px 0px;
-     font-size: 0.8rem;}
-
 .head_left{
      width: 100%;}
 
 .s_title{
      color: #F69C81;
      font-size: 0.8rem;
-     margin:3% 0 1% 0;}
+     margin:0% 0 1% 0;}
 
 .big_title{font-size: 1.8rem;
      color: #224383;
@@ -643,7 +639,7 @@ img{max-width: 100%; height: auto !important;}
 .img_wrap_s{max-width: 36%;}
 .img_wrap_m{max-width: 50%;}
 .img_wrap_l{max-width: 62%;}
-.img_wrap_xl{max-width: 90%;}
+.img_wrap_xl{max-width: 94%;}
 
 .content_center{text-align:center;
      width: 100%;}
