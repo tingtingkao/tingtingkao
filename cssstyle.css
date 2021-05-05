@@ -57,7 +57,7 @@ body{background-color:#052261;
      background-image: url(images/LineBg.svg);
      background-repeat: repeat;
      max-width: 1920px;
-     font-family:sans-serif, 'PingFang', 'Microsoft JhengHei';
+     font-family:sans-serif, 'PingFang', 'Microsoft JhengHei' !important;;
      display: flex;
      flex-direction: column;
 }
