@@ -38,9 +38,12 @@
         @-webkit-keyframes P04_Btn03 {from{transform:translateY(0px)}to{transform:translateY(-6px)}}
         .P04_Btn03{animation: P04_Btn03 0.6s infinite alternate;-webkit-animation: P04_Btn03 0.6s infinite alternate;}
 
+        @keyframes stickyBtn {from{transform:translateY(0px)}to{transform:translateY(-4px)}}
+        @-webkit-keyframes stickyBtn {from{transform:translateY(0px)}to{transform:translateY(-4px)}}
+        .stickyBtn{animation: stickyBtn 0.6s infinite alternate;-webkit-animation: stickyBtn 0.6s infinite alternate;}
+
         @keyframes blinker {50% {opacity: 0;}}
 
-     
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, 
 cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
@@ -50,102 +53,22 @@ time, mark, audio, video {
      padding: 0;
      border: 0;
      font-size: 100%;
-     font: inherit;
-     /*vertical-align: baseline;*/}   
+     /*font: inherit;
+     vertical-align: baseline;*/}   
 
 body{background-color:#052261;
      background-image: url(images/LineBg.svg);
      background-repeat: repeat;
      max-width: 1920px;
-     font-family:sans-serif, 'PingFang', 'Microsoft JhengHei' !important;;
+     font-family:sans-serif, 'PingFang', 'Microsoft JhengHei' !important;
      display: flex;
      flex-direction: column;
 }
 
-/*icons & fonts*/
-@font-face {
-font-family: 'Material Icons';
-font-style: normal;
-font-weight: 400;
-src: url(font/GochiHand-Regular.eot); /* For IE6-8 */
-src: local('Material Icons'),
-     local('MaterialIcons-Regular'),
-     url(font/materialdesignicons-webfont.woff2) format('woff2'),
-     url(font/materialdesignicons-webfont.woff) format('woff'),
-     url(font/materialdesignicons-webfont.ttf) format('truetype');
-}
-
-.material-icons {
-     font-family: 'Material Icons';
-     font-weight: normal;
-     font-style: normal;
-     font-size: 24px;  /* Preferred icon size */
-     display: inline-block;
-     line-height: 1;
-     text-transform: none;
-     letter-spacing: normal;
-     word-wrap: normal;
-     white-space: nowrap;
-     direction: ltr;
-   
-     /* Support for all WebKit browsers. */
-     -webkit-font-smoothing: antialiased;
-     /* Support for Safari and Chrome. */
-     text-rendering: optimizeLegibility;
-   
-     /* Support for Firefox. */
-     -moz-osx-font-smoothing: grayscale;
-   
-     /* Support for IE. */
-     font-feature-settings: 'liga';
-   }
-
-/*stick btn starts*/
-.stickyBtn {position: -webkit-sticky;
-     position: sticky;
-     top:36%;
-     width: 60px;}    
-         
-ul{ list-style: none;
-     margin: 0;
-     padding: 0;
-     display: block;
-     width: 5%;
-     height: 158px;
-     margin: 0 left;}
-li{float: left;
-     margin: 0;
-     padding: 0;
-     border: 0;}
-        
-.top{background-image: url("images/Float_btn.svg");
-     height: 25px;
-     width: 60px;}
-        
-.behance a{display: block;
-     width: 60px;
-     height: 38px;
-     background-image: url("images/D_Behance_icon.svg");
-     text-indent: -9999px;
-     line-height: 100px;}
-.behance a:hover{background-image: url("images/H_Behance_icon.svg");}
-        
-.linkedin a{display: block;
-     width: 60px;
-     height: 45px;
-     background-image: url("images/D_Linkind_icon.svg");
-     text-indent: -9999px;
-     line-height: 100px;}
-.linkedin a:hover{background-image: url("images/H_Linkind_icon.svg");}
-        
-.about a{display: block;
-     width: 60px;
-     height: 49px;
-     background-image: url("images/D_About_icon.svg");
-     text-indent: -9999px;
-     line-height: 100px;
-     color: #333;}
-.about a:hover{background-image: url("images/H_About_icon.svg");}  
+.stickyBtn {position:fixed;
+     bottom: 10%;
+     left: 2%;
+     width: 46px;}    
 
 .overlay {position: fixed;
   top: 0;
