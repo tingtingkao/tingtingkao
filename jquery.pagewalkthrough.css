@@ -9,7 +9,7 @@
   font-weight: lighter;
 }
 #jpwOverlay {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   z-index: 999999;
   top: 0;
@@ -102,8 +102,10 @@
   font-size: 22px;
 }
 #jpWalkthrough #jpwTooltip #tooltipInner .tooltipTitle {
-  font-size: 40px;
+  font-size: 46px;
+  margin-bottom: 1rem;
 }
+
 #jpWalkthrough .killOverlay {
   background-image: none !important;
   background-color: none !important;
@@ -118,7 +120,7 @@
   display: block;
 }
 #jpwClose:hover {
-  color: #7eff00;
+  color: #00c7ff;
 }
 #jpwClose:before {
   content: '';
@@ -135,9 +137,11 @@
 #jpwNext,
 #jpwFinish {
   float: right;
+  margin-top: 0.4rem;
 }
 #jpwPrevious {
   float: left;
+  margin-top: 0.4rem;
 }
 @font-face {
   font-family: 'GochiHand';

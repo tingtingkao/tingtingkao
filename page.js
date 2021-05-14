@@ -8,7 +8,7 @@ $(document).ready(function () {
                     margin: 0,
                     popup:
                     {
-                        content: '#type-modal',
+                        content: '#step1',
                         type: 'modal',
                         offsetHorizontal: 0,
                         offsetVertical: 0,
@@ -27,7 +27,7 @@ $(document).ready(function () {
                         width: '400'
                     }
                 },
-                {
+/*                {
                     wrapper: '',
                     margin: 0,
                     popup:
@@ -51,7 +51,7 @@ $(document).ready(function () {
                         offsetVertical: 0,
                         width: '400'
                     }
-                },
+                },*/
 
             ],
         name: 'Walkthrough'
