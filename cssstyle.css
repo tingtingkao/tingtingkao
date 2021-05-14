@@ -107,24 +107,80 @@ body{background-color:#052261;
   font-weight: bold;
   text-decoration: none;
   color: #333;
-  z-index: 999;}
+  z-index: 999;
+  cursor: pointer;}
 .popup .content {
   height: 80%;
   overflow: auto;
   padding: 3rem;
-  /*padding: 48px;*/
 }        
-/*.popup .content, p{
-     font-size: 1.6 rem;
-     line-height: 1.8 rem;
-     padding-bottom: 2%;
-}*/
+
+   /*Portfolio content*/
+mark.pink {
+     background:linear-gradient(transparent 40%,rgba(255,255,255,0) 40%, #FFBBD3 50%,transparent 80%);	
+    padding: 2px 1px;
+}
+
+.main_title{font-size: 2.2rem;
+     padding-bottom: 0.6rem;
+     color: #7E2121;
+     text-align: center;}
+
+.gray_content{ color: #555;
+     text-align: left;
+     font-size: 1.2rem;
+     line-height: 2rem;}
+
+.head_wrap{margin: auto;
+     display: flex;}
+
+.s_title{
+     color: #F69C81;
+     font-size: 0.8rem;
+      margin:0% 0 1% 0;}
+     
+.big_title{font-size: 1.8rem;
+     color: #224383;
+     margin-bottom: 2%;}
+
+.p_content{line-height: 2rem;
+     font-size: 1.1rem;}
+          
+.column{width: 45%;
+     margin: 10PX;
+     padding: 10px;
+     float:left;}
+  
+.column img{margin: auto;}
+          
+.column_2{width: 70%;
+     margin: auto;
+     text-align: center;}
+
+.column_3{width: 90%;
+margin: auto;}
+
+.gray_bg{background-color: #F2F2F2;
+     padding: 4%;
+     border-radius: 10px;
+     text-align:center;}
+
+.clear{clear:both;}
+  
+.img-fluid {width: 100%;
+     height: auto;}
+
+/*.img_wrap_s{max-width: 36%;}
+.img_wrap_m{max-width: 50%;}
+.img_wrap_l{max-width: 62%;}
+.img_wrap_xl{max-width: 94%;}*/
 
 .P04_Btn01{
      display: inline-block;
      width: 40px;
      height: 40px;
-     padding: 11px 8px;
+     text-align:center;
+     line-height:40px;
      border-radius: 100%;
      background-color: #F03978;
      transition: background .3s;
@@ -141,7 +197,8 @@ body{background-color:#052261;
      display: inline-block;
      width: 40px;
      height: 40px;
-     padding: 11px 8px;
+     text-align:center;
+     line-height:40px;
      border-radius: 100%;
      background-color: #F03978;
      transition: background .3s;
@@ -184,7 +241,8 @@ body{background-color:#052261;
 .P03_Btn01{display: inline-block;
      width: 40px;
      height: 40px;
-     padding: 11px 8px;
+     text-align:center;
+     line-height:40px;
      border-radius: 100%;
      background-color: #F03978;
      transition: background .3s;
@@ -200,7 +258,8 @@ body{background-color:#052261;
 .P03_Btn02{display: inline-block;
      width: 40px;
      height: 40px;
-     padding: 11px 8px;
+     text-align:center;
+     line-height:40px;
      border-radius: 100%;
      background-color: #F03978;
      transition: background .3s;
@@ -234,7 +293,8 @@ body{background-color:#052261;
 .P02_Btn01{display: inline-block;
      width: 40px;
      height: 40px;
-     padding: 11px 8px;
+     text-align:center;
+     line-height:40px;
      border-radius: 100%;
      background-color: #F03978;
      transition: background .3s;
@@ -250,7 +310,8 @@ body{background-color:#052261;
 .P02_Btn02{display: inline-block;
      width: 40px;
      height: 40px;
-     padding: 11px 8px;
+     text-align:center;
+     line-height:40px;
      border-radius: 100%;
      background-color: #F03978;
      transition: background .3s;
@@ -301,7 +362,6 @@ img{max-width: 100%; height: auto !important;}
      font-weight: bold;}
 .material-icons{
      vertical-align:middle;
-     margin-right: 6px;
      margin-bottom:3px ;
      font-size: 2.2rem;}
 
@@ -325,7 +385,6 @@ img{max-width: 100%; height: auto !important;}
      text-align: center;}
 .material-icons{
      vertical-align:middle;
-     margin-right: 6px;
      margin-bottom:0px ;
      font-size: 2.2rem;}
 
@@ -340,27 +399,6 @@ img{max-width: 100%; height: auto !important;}
 .panel {width: 100%;}
 
 #pane-1 {max-height: 1024px;}
-
-  /*-- Animation Keyframes --*/
-  @media (max-width:768px){
-.guidebtn a{font-size: 0.8rem;
-     border-radius: 4px;
-     margin: 8% 0 6% 0;
-     padding: 5px;}
-.guidebtn a:hover{
-     padding: 5px;}
-
-.skipbtn a{font-size: 0.8rem;
-     border-radius: 4px;
-     margin: 20% 0% 4% -10%;}
-.material-icons{
-     vertical-align:middle;
-     margin-right: 6px;
-     margin-bottom:3px ;
-     font-size: 1.4rem;}
-
-.stickyBtn {display: none;}    
-}
 
 /* START TOOLTIP STYLES */
 [tooltip] {
@@ -392,9 +430,9 @@ img{max-width: 100%; height: auto !important;}
      text-align: center;
      
      /* 
-       Let the content set the size of the tooltips 
-       but this will also keep them from being obnoxious
-       */
+     Let the content set the size of the tooltips 
+     but this will also keep them from being obnoxious
+     */
      min-width: 3em;
      max-width: 21em;
      white-space: nowrap;
@@ -532,38 +570,28 @@ img{max-width: 100%; height: auto !important;}
      padding: .4em 1em;
    }
 
-   /*Portfolio content*/
-.head_wrap{margin: auto;
-     display: flex;}
-
-.gray_bg{background-color: #F2F2F2;
-     padding: 4%;
-     border-radius: 10px;
-     text-align:center;}
-
-.head_left{
-     width: 100%;}
-
-.s_title{
-     color: #F69C81;
-     font-size: 0.8rem;
-     margin:0% 0 1% 0;}
-
-.big_title{font-size: 1.8rem;
-     color: #224383;
-     margin-bottom: 2%;}
+  /*-- RWD CSS --*/
+  @media (max-width:768px){
+     .guidebtn a{font-size: 0.8rem;
+          border-radius: 4px;
+          margin: 8% 0 6% 0;
+          padding: 5px;}
+     .guidebtn a:hover{
+          padding: 5px;}
      
-.head_content{font-size: 1rem;
-     font-weight:400;
-     color: #333;
-     line-height: 1.8rem;
-     letter-spacing: 1px;}
+     .skipbtn a{font-size: 0.8rem;
+          border-radius: 4px;
+          margin: 20% 0% 4% -10%;}
+     .material-icons{
+          vertical-align:middle;
+          margin-bottom:3px ;
+          font-size: 1.4rem;}
+     
+     .stickyBtn {display: none;} 
 
-.img_wrap_s{max-width: 36%;}
-.img_wrap_m{max-width: 50%;}
-.img_wrap_l{max-width: 62%;}
-.img_wrap_xl{max-width: 94%;}
-
-.content_center{text-align:center;
-     width: 100%;}
-
+     .column{width: 100%;
+          margin: auto;
+          text-align: center;
+          padding: 10px;}
+     }
+       /*-- RWD CSS --*/
