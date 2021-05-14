@@ -117,7 +117,7 @@ body{background-color:#052261;
 
    /*Portfolio content*/
 mark.pink {
-     background:linear-gradient(transparent 40%,rgba(255,255,255,0) 40%, #FFBBD3 50%,transparent 80%);	
+     background:linear-gradient(transparent 40%,rgba(255, 153, 233, 0) 40%, #FFBBD3 50%,transparent 80%);	
     padding: 2px 1px;
 }
 
