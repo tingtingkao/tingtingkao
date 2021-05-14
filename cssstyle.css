@@ -593,5 +593,13 @@ img{max-width: 100%; height: auto !important;}
           margin: auto;
           text-align: center;
           padding: 10px;}
+     
+     .column_2{width: 100%;
+          margin: auto;
+          text-align: center;}
+     
+     .popup .content {  
+          padding: 1.6rem;}
+
      }
        /*-- RWD CSS --*/
