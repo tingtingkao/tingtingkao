@@ -1,603 +1,398 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <title>Hello, I'm TingTing. Welcome to see my portfolio, hope you'll like it.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="cssstyle.css">
-    <!-- Standard CSS Includes -->
-    <link type="text/css" rel="stylesheet" href="jquery.pagewalkthrough.css">
-    <script src="scripts/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
-    <script type="text/javascript">
-        var winHeight = $(window).innerHeight();
-        $(document).ready(function () {
-            imgLoad();
-    
-            //$(".panel").height(winHeight);
-            $("body").height($(".container").innerHeight());
-    
-            $('.close').click(function () {
-                $('.overlay').css('display', 'none');
-            });
-            $('.button').click(function () {
-                $($(this).attr('href')).css('display', '');
-            });
-            
-            window.addEventListener('resize', function (event) {
-                imgLoad();
-            });
-            $(window).on('scroll',function(){
-                $(".panelCon").css('bottom',$(window).scrollTop()*-1);
-            });
-        });
-
-        function imgLoad(){
-            let imgCount=6;console.log(imgCount);
-            $('.img-fluid').on('load', function () {
-                imgCount-=1;
-                if (imgCount==0){
-                    $("body").height($(".container").innerHeight());
-                };
-            });
-        };
-    </script>  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <title>Ting Ting</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image"
+        content="" />
+    <meta property="og:image:url"
+        content="" />
+    <link rel="icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async=""></script>
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 11]>
+    <script>alert('您正在使用版本過舊的瀏覽器，系統即將自動導向google瀏覽器下載頁面');window.location="https://www.google.com.tw/chrome/browser/desktop/";</script>
+    <![endif]-->
 </head>
-<body>
-
-<main class="panelCon"> 
-<div class="container">
-    
-<div id="pane-4" class="panel" style="position: relative;"><!--this is the thirdfloor starts-->  
-        <div class="row justify-content-center" >
-                <a class="button" href="#popup07"><div class="P04_Btn01"><span tooltip="克羅埃西亞" flow="down">
-                    <span style="color: aliceblue; font-size: 24px;" class="material-icons">photo_camera</span></span>
-                </div></a>   
-                
-                <div id="popup07" class="overlay">
-                    <div class="popup">
-                        <div class="head">
-                            <h2>克羅埃西亞內容媒體策略</h2>
-                            <a class="close">&times;</a>
-                        </div>
-                        <div class="content">
-                            <div class="column_2" style="margin-bottom: 2%;">
-                                <div class="s_title">About Project</div>  
-                                <div class="main_title"><b>克羅埃西亞內容媒體策略</b></div>
-                                <div class="gray_content">
-<b>・客戶：</b>克羅埃西亞國家觀光旅遊局<br><br>
-<b>・我的角色：</b>研究員 (人物誌訪談、旅遊內容喜好研究)、視覺設計師、媒體和內容策略師 (使用哪些數位媒體和行銷手法)<br><br>
-<b>・設計過程：</b>商業目標研究 - 使用者目標研究 - 系列活動創立 - 內容測試 - 發布內容 
-                                </div>
-                               <div class="s_title" style="margin-top: 6%;">Objective</div>   
-                                <div class="big_title">制定目標</div>
-                                <p class="p_content" style="text-align: left;">增加中國觀光客到克羅埃西亞旅遊，但在閱讀相關的資料後，發現一直無法達到此目標的真正的問題如下：<br><br>
-                                        1.缺少對於受眾目標的了解：<br><br>
-                                        只有過往中國旅客簡略的人口統計資料、包含年齡、旅遊形式和造訪的景點<br><br>
-                                        2.品牌知名度低<br><br>
-                                        超過40%的中國人沒聽過克羅埃西亞這個國家。<br><br>
-                                        3.沒有連續性的媒體策略：<br><br>
-                                        克羅埃西亞沒有與任何的廣告公司、旅行社合作，並有計劃性的旅遊<br><br>                                           
-                                        因此將目標改為“藉媒體內容策略來提升目標受眾對克羅埃西亞的認識”</p>
-                            </div><!--RWD-->
-                            <div class="column_3" style="margin-bottom: 8%;"><img src="images/travel.png"  class="img-fluid"></div><!--RWD-->
-                            
-                                <div class="column_2" style="margin-bottom: 8%;">
-                                    <div class="s_title">Research</div>   
-                                    <div class="big_title">研究的方向和重點</div> 
-                                    <p class="p_content">基於上訴的問題點，展開了以下的研究：<br><br>
-<div style="color:#777; text-align: left;">・研究過程：商業目標研究 - 使用者目標研究 - 系列活動創立 - 內容測試 - 發布<br><br></div>
-一開始為了確定公司的商業目標展開了內部訪談和媒體環境調查(包含競品分析、SWOT Anaylsis、公司成員結構)，在找出現階段的問題後，便針對第一個問題進行質量與量化分析(缺少目標受眾的了解)，之後針對第二個問題點(品牌知名度低)來創立行銷活動，當然也要確認此活動是否真有打到Persona的痛點與需求(AB 測試)，最後擬定行銷內容的發布管道。</p>   
-                                </div><!--RWD-->
-
-                                <div class="column_2" style="margin-bottom: 2%;">
-                                    <div class="s_title">Process</div>   
-                                    <div class="big_title">研究的過程</div>
-                                    <p class="p_content">克羅埃西亞國家觀光旅遊局將目前造訪克羅埃西亞的中國旅客分為三大類群：<br><br>
-                                        <div style="text-align: left;">
-                                            1.旅遊團體(多為年長者，因語言、文化和環境不熟悉，選擇跟隨旅行團)<br>
-                                            2.家族旅遊(中產階級居多，多半會帶小孩)<br>
-                                            3.個人自助行(年輕上班族、學生居多，語言能力強，且使用網路找尋資料)<br><br>
-                                            </div>    
-    經過討論，建議將目標集中於個人自助行的年輕人，因此目標善於使用網路收尋，相較其它兩個旅遊類群較容易接觸(基於行銷成本、公司資源和媒體環境考量)。</p>
-                                </div><!--RWD-->
-                                <div class="column_3" style="margin-bottom: 8%;"><img src="images/ca_persona.png"  class="img-fluid"></div><!--RWD-->
-        
-                                <div class="column_2" style="margin-bottom: 2%;">
-                                    <div class="s_title">How to Pitch</div>   
-                                    <div class="big_title">影響受眾</div>
-                                    <p class="p_content">研究結果顯示超過60%的中國年輕人旅遊時會參考KOL的影片和貼文，因此先與KOL合作拍攝旅遊影片，藉此引起受眾對於克羅埃西亞的興趣和喜愛。<br><br>
-                                        約略56%的中國年輕人皆會在騰訊等旅遊平台尋找旅遊靈感和資料，因此與中國各大旅遊平台合作推出廣告，而受眾提到當對於旅遊景點有了基本的認知後，會想更進一步了解旅遊地的歷史和文化，因此也同步推出深度的專欄報導網頁。<br><br>
-                                        最後為讓受眾記住旅遊地的特色與美景，於小紅書和Ｗechat上定期發布旅遊訊息，藉此讓受眾記住旅遊地的特色與美景。</p>
-                                </div><!--RWD-->
-                                <div class="column_3" style="margin-bottom: 6%;"><img src="images/pitchbook.png" class="img-fluid"></div><!--RWD-->
-                                
-                                <div class="gray_bg">
-                                    <div class="s_title">Limitation ＆ Reflection</div>                                   
-                                    <div class="big_title">限制與回顧</div> 
-                                    <p class="p_content">因為地理限制，無法將研究目標集中在中國一線城市，因一、二線人口的收入和旅遊可支配金額皆不同，前往的旅遊景點和消費習慣可能存在落差，舉例來說: 一線城市之青年可能因為收入，社經地位較高，會傾向於精品名牌店購物，而非當地特色攤販。</p>
-                                </div><!--content center--> 
-                        </div>
-                    </div>
-                </div>
-
-
-                <a class="button" href="#popup06"><div class="P04_Btn02"><span tooltip="Anota專案創建系統" flow="down">
-                    <span style="color: aliceblue; font-size: 24px;" class="material-icons">photo_camera</span>
-                </span></div></a>
-                
-                <div id="popup06" class="overlay">
-                    <div class="popup">
-                        <div class="head">
-                            <h2>Anota專案創建系統</h2>
-                            <a class="close">&times;</a>
-                        </div>
-                        <div class="content">
-                            <div class="column_2" style="margin-bottom: 2%;">
-                                <div class="s_title">About Project</div>  
-                                <div class="main_title"><b>Anota專案創建系統</b></div>
-                                <div class="gray_content">
-<b>・客戶：</b>中央健康保險署<br><br>
-<b>・我的角色：</b>使用流程規劃 (Wireframes & Flowchart)、訪談、UI設計、Mockup、建置設計資料庫、相關文件撰寫 (介面使用說明、企劃書) <br><br>
-<b>・設計過程：</b>確認客戶需求和執行方向 - 繪製Functional map - 繪製Flowchart - 與產品經理、業主和工程師討論 - 繪製Wireframes - 再次與客戶和工程師確認 - UI設計
-                                </div>
-
-                                <div class="s_title" style="margin-top: 6%;">Problems</div>   
-                                <div class="big_title">初期需求</div>  
-                                <p class="p_content">
-進行AI醫療數據分析前，需輸入大量的醫療名詞解釋，而標註醫療名詞無法有系統的集中管理，且在耗費大量人力和時間後，發現標註品質低落，為解決上訴問題而設計了「Anota專案創建系統」。</p>  
-                        </div><!--RWD-->
-                        <div class="column_3" style="margin-bottom: 8%;"><img style="margin-top:2%" src="images/anota.png" class="img-fluid"></div>
-
-                        <div class="column" style="margin-bottom: 8%;">
-                            <div class="s_title">Wireframe</div>
-                            <div class="big_title">用線框與客戶探討流程</div>       
-<p class="p_content">與業主訪談後，將使用者分為「專案製作者」、「標註人員」、「專案管理人」，並針對使用習慣和需求制定流程，繪製Wireframe，並進行畫面流程測試。</p> 
-                            </div><!--H_RWD-->
-                        <div class="column" style="margin-bottom: 2%;"><img src="images/Wireframe.png" class="img-fluid"></div><!--H_RWD-->
-                        <div class="clear"></div>
-
-                        <div class="column_2" style="margin-bottom: 2%;">
-                            <div class="s_title">Persona</div>   
-                            <div class="big_title">為不同的使用者量身打造</div>           
-<p class="p_content">訪談後發現三種主要的使用者的知識背景、年齡和使用習慣皆有所落差，導致操作習慣和認知思考有很大的不同，因此“導致標注過程出現問題，如使用者不懂標註步驟和順序，隨意輸入符號和用語，導致文件品質低劣”，因此在設計UX和UI時以簡單的使用流程為主，藉此減少使用者的使用障礙，亦加強相關醫療名詞的解釋和流程的說明好讓使用者能快速上手此軟體。</p> 
-                        </div><!--H_RWD-->
-                        <div class="column_3" style="margin-bottom: 8%;"><img style="margin-top:2%" src="images/aota_persona.png" class="img-fluid"></div>
-
-                        <div class="column" style="margin-bottom: 2%;">
-                            <img src="images/Roboto.png">
-                        </div><!--H_RWD-->
-                        <div class="column" style="margin-bottom: 8%;">
-                            <div class="s_title">Typography</div>
-                            <div class="big_title">字體選擇</div>
-                            <p class="p_content">好閱讀和效率是我們的優先考量，英文選用現在感十足且易讀的無襯線字體；而中文使用現代與東方感的日式漢字黑體。</p>
-                        </div><!--H_RWD-->
-                        <div class="clear"></div>
-
-                        <div class="column" style="margin-bottom: 2%;">
-                            <div class="s_title">Colors</div>
-                            <div class="big_title">色彩選擇</div>
-                            <p class="p_content">使用藍色讓使用者聯想此軟體為醫療相關的專業軟體外，藍色亦有讓人冷靜處理事務的效果。</p>    
-                        </div><!--H_RWD-->
-                        <div class="column" style="margin-bottom: 2%;">
-                            <img src="images/anota_color.png" class="img-fluid">
-                        </div><!--H_RWD-->
-                        <div class="clear"></div>
-
-                        <div class="column" style="margin-bottom: 2%;">
-                            <img src="images/System Guideline.png" class="img-fluid">
-                        </div><!--H_RWD-->
-                        <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Design Library</div>
-                        <div class="big_title">系統的方法</div>  
-<p class="p_content">UI畫面力求簡單清楚，Anota的頁面眾多、UI元件重複性高，因此建立了系統化的UI組件資料庫藉此達到一致化和系統性，此方法不只加速了開發時間，也讓使用者不會因為UI元件的不同而感到疑惑。</p>
-                        </div>
-                        <div class="clear"></div>
-        
-                        <div class="gray_bg">
-                                <div class="s_title">Limitation ＆ Reflection</div>                                   
-                                <div class="big_title">限制與回顧</div> 
-<p class="p_content">因合約和流程限制，只能與幾名使用者接觸，無法從更多的使用者那獲得第一手的資訊，所獲得的回饋可能存在誤差，如傳遞者對口述問題有所誤解，或受其它因素影響而造成問題。</p>
-                        </div><!--content center--> 
-                        
-                        </div>
-                    </div>
-                </div>
-                
-                <!--<a href="mailto:tingting198711117@gmail.com?subject=Mail from My Site" class="mail_03">email me</a>!-->
-                
-                <a class="button" href="#popup08"><div class="SecretBtn"></div></a>
-                <div id="popup08" class="overlay">
-                    <div class="popup">
-                        <div class="head">
-                            <h2>作品理念說明</h2>
-                            <a class="close">&times;</a>
-                        </div>
-                        <div class="content">
-<div class="head_content" style="width: 70%; margin: auto;">Hi 非常謝謝你瀏覽我的作品集網站，這個網站最開始的出發點是想讓使用者可以在看一堆作品集時可以感到有趣，不再只是看一堆圖和分析文字。<br><br>
-而之所以會使用房子來呈現網站是基於產品三層策略的概念(第一層競爭對手有的功能，你都要有，中間為核心功能和體驗，產品的價值、和別的產品有什麼不一樣?、最後一層是情感面(像是使用起來非常有品味、品牌力)。<br><br>
-所以一開始的房間非常之簡陋，而隨著時間和經驗的增加，產品才能逐漸達到下一個階段，而在作品放置的概念是一開始的一頁式網頁，這些網頁通常不太會有太複雜的UX考量(但也是需要思考SEO和內容)，第二層的作品開始針對使用者的痛點來提供解決方法，最後的除了著重於使用者的研究外，也搭配數據和訪談經驗來解決問題，當然還有公司的品牌呈現也是非常重要的。</div>
-                        </div>
-                    </div>
-                </div>
-        </div><!--row-->  
-
-    <div class="row justify-content-center">
-        <div class="col" style="outline: none;"><img src="images/SecondFloorImage.png" class="img-fluid"></div>  
-    </div><!--row-->  
-</div><!--thirdfloor ends-->
- 
-<div id="pane-3" class="panel" style="position: relative;"><!--this is the secondfloor starts-->
-    <div class="row justify-content-center">
-            <a class="button" href="#popup05"><div class="P03_Btn01"><span tooltip="十國藥價比價網站" flow="down">
-                <span style="color: aliceblue; font-size: 24px;" class="material-icons">photo_camera</span></span>
-            </div></a>
-            <div id="popup05" class="overlay">
-                <div class="popup">
-                        <div class="head">
-                            <h2>十國藥價比價網站</h2>
-                            <a class="close">&times;</a>
-                        </div>
-                        <div class="content">
-                            <div class="column_2" style="margin-bottom: 2%;">
-                                <div class="s_title">About Project</div>  
-                                <div class="main_title"><b>十國藥價比價網站</b></div>
-                                <div class="gray_content">
-                                    <b>・客戶：</b>中央健康保險署<br><br>
-                                    <b>・我的角色：</b>UX使用流程設計、UI視覺設計<br><br>
-                                    <b>・設計過程：</b>定義需求 - 與產品經理、工程師、業主討論網站功能和執行方向 - FlowChart & Wireframes草稿繪製 - 和相關人士討論功能和使用流程 - UI設計
-                                </div>
-
-                                <div class="s_title" style="margin-top: 6%;">Objective</div>   
-                                <div class="big_title">設計的目的</div>      
-                                <p class="p_content">為穩定藥品品質和價錢，使用者需重複瀏覽主要參考國家的藥價查詢網站，而使用者只需在此網站查詢，即會顯示主要國家的歷史、即期藥價、匯率等，網站使用爬蟲程式去搜尋已設定好的國家的藥價並顯示結果。</p>
-                            </div><!--RWD-->
-                            <div class="column_3" style="margin-bottom: 8%;"><img src="images/drag_kv.png" class="img-fluid"></div><!--RWD-->
-
-                            <div class="column" style="margin-bottom: 2%;">
-                                <div class="s_title">Persona</div>  
-                                <div class="big_title">主要使用者</div>     
-<p class="p_content">主要工作：與藥商談判協商藥價<br><br>
-背景資料：具備基礎的醫療背景，雖懂基礎的英文藥名，但中文還是相較直覺<br><br>
-使用情境：上不同國家的藥價網站去查詢藥價紀錄，包含德文、日文、瑞典文等等，常常使用Google來翻譯藥品名稱，對於要常常切換不同的視窗感到麻煩，要手動輸出Pdf報告來製作藥價價目表給廠商看還有跟長官報告。</p> 
-                                </div><!--H_RWD-->
-                            <div class="column" style="margin-bottom: 2%;"><img src="images/asian@2x.png" class="img-fluid"></div><!--H_RWD-->
-                            <div class="clear"></div>
-
-                            <div class="column" style="margin-bottom: 2%;">
-                                <img src="images/drag_wireframe.png" class="img-fluid">
-                            </div><!--H_RWD-->
-                            <div class="column" style="margin-bottom: 8%;">
-                                <div class="s_title">Discussion</div>  
-                                <div class="big_title">反覆討論與確認</div>
-<p class="p_content">了解使用者的痛點與需求後，繪製Flow Chart和客戶確認功能和頁面，先使用Wireframes來跟客戶討論畫面上的按鈕和流程，之後使用Prototype來進一步和使用者討論設計流程。</p> 
-                            </div><!--H_RWD-->
-                            <div class="clear"></div>
-     
-                            <div class="column_2" style="margin-bottom: 8%;">
-                                <div class="s_title">Layout</div>
-                                <div class="big_title">介面構成</div>
-                                <p class="p_content">畫面需顯示十個國家的藥品名稱和匯率等資料，資訊和內容龐大，為了讓
-使用者能馬上清楚每個藥價的相關資訊與匯率，因此畫面以表格設計為主，且此網站亦有即時翻譯中文和輸出Pdf檔案等功能，讓使用者能列印檔案來參考藥價的波動與紀錄。
-                            </p></div><!--RWD-->
-
-                            <div class="column" style="margin-bottom: 2%;">
-                                <img src="images/ping.png" class="img-fluid">
-                            </div><!--H_RWD-->
-                            <div class="column" style="margin-bottom: 8%;">
-                                <div class="s_title">Typography</div>
-                                <div class="big_title">字體選擇</div>      
-                                <p class="p_content">字體選用黑體，以便讓使用者在電腦及行動裝置螢幕上皆有良好的可視性。 </p> 
-                            </div><!--H_RWD-->
-                            <div class="clear"></div>
-        
-                            <div class="column" style="margin-bottom: 4%;">
-                                <div class="s_title">Visual & Colors</div>
-                                <div class="big_title">視覺風格與色調</div>       
-    <p class="p_content">網頁用於搜尋醫療藥品之價錢，顏色使用具有治愈、鎮靜效果的綠色，而為了讓使用者可以快速分辨不同國家的資訊，因此在Icon、折線圖線條上使用不同顏色來區別。</p> 
-                                </div><!--H_RWD-->
-                            <div class="column" style="margin-bottom: 4%;"><img src="images/drag_color.png" class="img-fluid"></div><!--H_RWD-->
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </div>
-
-            <!--<div class="P03_Btn02"><span tooltip="See Work." flow="down"><a  href="#popup04">
-                <span style="color: aliceblue; font-size: 24px;" class="material-icons">photo_camera</span>
-            </a></span></div>     
-            <div id="popup04" class="overlay">
-                <div class="popup">
-                    <div class="head">
-                        <h2>Here i am</h2>
-                        <a class="close">&times;</a>
-                    </div>
-                    <div class="content">
-                        Thank to pop me out of that button, but now i'm done so you can close this window.
-                    </div>
-                </div>
-            </div>-->  
-
-            <a href="https://medium.com/@tingtingkao" target="_blank" title="medium" class="mail_02"></a>
+<body class="index">
+    <div class="dec_cloud">
+        <img src="images/kv_cloud_01.png" alt="">
+        <img src="images/kv_cloud_02.png" alt="">
+        <img src="images/kv_cloud_03.png" alt="">
+        <img src="images/kv_cloud_04.png" alt="">
+        <img src="images/kv_cloud_05.png" alt="">
+        <img src="images/kv_cloud_06.png" alt="">
     </div>
-
-    <div class="row justify-content-center">
-        <div class="col"><img src="images/FirstFloorImage.png" class="img-fluid"></div>
-    </div><!--row-->                
-</div><!--first floor ends-->
-
-<div id="pane-2" class="panel" style="position: relative;"><!--this is the grandfloor starts-->
-    <div class="row justify-content-center">
-        <a class="button" href="#popup03"><div class="P02_Btn01"><span tooltip="誠品音樂活動頁" flow="down">
-            <span style="color: aliceblue; font-size: 24px;" class="material-icons">photo_camera</span></span>
-        </div></a>   
-     
-        <div id="popup03" class="overlay">
-            <div class="popup">
-                <div class="head">
-                    <h2>誠品音樂活動頁</h2>
-                    <a class="close">&times;</a>
+    <header class="header_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="item_logo">
+                        <a href="#">
+                            <img class="logo" src="images/header_logo.svg" alt="Ting-Ting">
+                        </a>
+                        <a class="btn btn_buger" href="javascript:void(0);">
+                            <img src="images/btn_menu_m.svg" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="content">
-                    <div class="column_2" style="margin-bottom: 2%;">
-                        <div class="s_title">About Project</div>  
-                        <div class="main_title"><b>誠品音樂活動頁</b></div>
-                        <div class="gray_content">
-                            <b>・客戶：</b>誠品線上 (臺灣大型連鎖書店，曾獲「臺灣百大品牌」文創服務類別企業、亦被CNN評選為「全球最酷書店」<br><br>
-                            <b>・我的角色：</b>UX體驗設計、UI視覺設計、切版<br><br>
-                            <b>・設計過程：</b>定義活動頁需求 - 與專案經理討論功能與畫面 - Wireframe繪製 - UI設計  - 切版 - 上線
+                <div class="col-7 col-md-9">
+                    <div class="item_menu">
+                        <div class="menu_content">
+                            <div class="btn btn_menuMore" href="javascript:void(0);" >
+                                <span>UI/UX Case Study</span>
+                                <ul class="menu_list">
+                                    <li>
+                                        <a class="btn btn_menu" href="uiux-Ai.html"><span>AI Powered Referral</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn_menu" href="uiux-Anota.html"><span>Anota Software</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn_menu" href="uiux-Portfolio.html"><span>Drug Search</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn btn_menuMore" href="javascript:void(0);" >
+                                <span>Marketing Project</span>
+                                <ul class="menu_list">
+                                    <!-- <li>
+                                        <a class="btn btn_menu" href="marketing-Croatia.html">
+                                            <span>Croatia</span>
+                                        </a>
+                                    </li> -->
+                                    <!-- <li>
+                                        <a class="btn btn_menu" href="marketing-AIPoweredReferral.html">
+                                            <span>Eurosonic Noorderslag </span>
+                                        </a>
+                                    </li> -->
+                                    <li>
+                                        <a class="btn btn_menu" href="marketing-E-NewsletterofEslite.html">
+                                            <span>E-Newsletter of Eslite</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn_menu" href="marketing-LandingPageofEslite.html">
+                                            <span>Landing Page of Eslite</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn_menu" href="mailto:tingting19871117@gmail.com" >
+                                <span>Contact Me</span>
+                            </a>
+                            <a class="btn btn_close m_block" href="javascript:void(0);">
+                                <img src="images/btn_close.svg" alt="">
+                            </a>
                         </div>
-
-                        <div class="s_title" style="margin-top: 6%;">Reasons for Design</div>   
-                        <div class="big_title">活動頁的目的</div>     
-                        <p class="p_content">此活動頁的目標為增加CD的銷售量，在這之前，要先讓使用者在活動頁停留久一點，讓他們閱讀產品的相關資訊，然後成功購買CD，因此活動頁的視覺設計和*CTA放置非常重要，畫面除了要符合其主題的風格外，也要融合誠品的的品牌形象。<br>
-                        <span style="color:#7E2121; font-size: 0.6 rem;">*CTA:Call To Action使造訪網頁的訪客可以依循著網頁的設計而有所「行動」。</span></p>
-                    </div><!--RWD-->
-                    <div class="column_3" style="margin-bottom: 8%;"><img src="images/music_kv.png" class="img-fluid"></div><!--RWD-->
-
-                    <div class="column" style="margin-bottom:2%;"><img src="images/asian.png" class="img-fluid"></div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Persona</div>                                        
-                        <div class="big_title">目標受眾</div>  
-<p class="p_content">喜歡: <br>藝術、設計和人文、擴展自已看待事情的視野和深度、關心社會議題和國際情勢，對生活總抱持著正面態度，注重生活品質，喜歡有質感的生活格調。
-                    <div style=" display: flex; margin:2% 0% 0% 0%;">                           
-                        <div class="head_content" style="width: 45%; margin-right: 10%;"><b>到誠品線上購物的理由:</b><br>
-                            1.網站視覺設計漂亮<br>
-                            2.活動企劃和文案有趣<br>
-                            3.實體店面的顧客<br>
-                            4.支持誠品的理念</div>
-                        <div class="head_content" style="width: 45%;"><b>希望改進的地方:</b><br>                                    
-                            1.提供較多折扣和優惠<br>
-                            2.增加商品的描述<br>
-                            3.增加觀看購買者的評價和感想<br>
-                        </div>
-                    </div></p></div><!--H_RWD-->
-                    <div class="clear"></div>
-
-                    <div class="column_2" style="margin-bottom: 8%;">
-                        <div class="s_title">Stimulus</div>   
-                        <div class="big_title">用畫面來激起購物慾</div>     
-                        <p class="p_content">除了清楚展示產品外，活動頁的視覺與主題符合也是讓使用者喜愛上此視覺的重點之一，因此要先確立台灣獨立音樂的風格特性，從中找與誠品書店的品牌形象相似之處，此外，使用者希望能觀看更清楚的產品描述細節和內容，因此添加了線上試聽和觀看作品細節圖片的幻燈片選項。</p>
-                    </div><!--RWD-->                  
-
-                    <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Typography</div>
-                        <div class="big_title">字體選擇</div>      
-<p class="p_content">為了符合獨立音樂的柔和優雅感，並讓字體在較長的段落中仍然可讀，選用了Garamond來增加整體的排版效果和諧美觀。 </p> 
-                        </div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 8%;"><img src="images/Garamond.png" class="img-fluid"></div><!--H_RWD-->
-                    <div class="clear"></div>  
-
-                    <div class="column" style="margin-bottom: 8%;"><img src="images/music_color.png" class="img-fluid"></div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Color</div>
-                        <div class="big_title">顏色</div>       
-<p class="p_content">為了呈現出獨立音樂的「台式新浪漫」，使用了淡橘色來表示這種冷靜放鬆，讓使用者可以只看畫面就可以感受到聲音就環繞在耳朵旁，在腦海裡畫出一幅清晰的風景並感受到療癒。</p> 
-                        </div><!--H_RWD-->
-                    <div class="clear"></div>  
-                            
-                    <div class="column_2" style="margin-bottom: 2%;">
-                        <div class="s_title">Details</div>   
-                        <div class="big_title">UX細節</div>  
-                    </div><!--RWD-->
-                    <div class="column_3" style="margin-bottom: 8%;"><img src="images/music_detail.png" class="img-fluid"></div><!--RWD-->
-                    
-                    <div class="column" style="margin-bottom: 4%; background-color: #F2F2F2; border-radius: 10px;" >
-                        <div class="s_title" style="padding:20px 0px 0 20px;">Reflection</div>  
-                        <div class="big_title" style="padding-left: 20px;">回顧</div>       
-<p class="p_content"  style="padding: 0 20px 20px 20px;">在製作此登陸頁時因為時間和排程等限制，來不急執行A/B測試、動眼追蹤及分析，藉此得知使用者更精準的喜好和消費習慣是否如問券上所言。此外，因大部分的專輯為新發售，且登陸頁曝光時間短、上架時間快速無法即時收集網友的星等評級和留言，藉此來消彌使用者的疑慮和增加他們的購買意願。</p> 
-                        </div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 4%; padding:0px 20px 20px 20px;"><img src="images/music_browser.png" class="img-fluid"></div><!--H_RWD-->
-                    <div class="clear"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-            
-        <a class="button" href="#popup02"><div class="P02_Btn02"><span tooltip="誠品行銷電子報" flow="down">
-            <span style="color: aliceblue; font-size: 24px;" class="material-icons">photo_camera</span>
-        </span></div></a>
-
-        <div id="popup02" class="overlay">
-            <div class="popup">
-                <div class="head">
-                    <h2>誠品行銷電子報</h2>
-                    <a class="close">&times;</a>
-                </div>
-                <div class="content">
-                    <div class="column_2" style="margin-bottom: 2%;">
-
-                        <div class="s_title">About Project</div>  
-                        <div class="main_title"><b>誠品行銷電子報</b></div>
-                        <div class="gray_content">
-                            <b>・客戶：</b>誠品線上購物<br><br>
-                            <b>・我的角色：</b>UX體驗設計、UI視覺設計、切版、電子報測試<br><br>
-                            <b>・設計過程：</b>定義需求 - 與專案經理討論電子報的內容和使用者的痛點與需求 - 草稿繪製和版面確認 - 討論 - 視覺設計 - 電子報切版 - 版本測試 - 發布電子報
+    </header>
+    <section class="section_kv">
+        <div class="container">
+            <div class="item">
+                <h1 title="Hello!! I'm Ting Ting">
+                    <img class="pc_block" src="images/kv_title_pc.svg" alt="Hello!! I'm Ting Ting">
+                    <img class="m_block" src="images/kv_title_m.svg" alt="Hello!! I'm Ting Ting">
+                </h1>
+                <div class="row">
+                    <div class="col-10 col-md-8">
+                        <div class="item item_content">
+                            <h2 class="title" data-aos="fade-up">
+                                <span>A product designer</span>
+                            </h2>
+                            <p data-aos="fade-up">
+                                Born in Macau and raised in Taiwan, I majored in visual communication design in college. My graduation project "The Multimedia interactive interface of pregnancy" got the prize of NAGOYA DESIGN DO!. Since that I have believed in that "Human Centered Design" can improve human well-being, user satisfaction, accessibility and sustainability maintain a sustainable business model.
+                            </p>
                         </div>
-
-                        <div class="s_title" style="margin-top: 6%;">Objective</div>   
-                        <div class="big_title">設計的目的</div>     
-<p class="p_content">超過60%的台灣網路使用者每月看到Email行銷電子報會進行一次消費，且Email行銷的投資報酬率高達73%，為了刺激消費，誠品線上購物定期更新電子報的內容和視覺，好增加消費者的新鮮感和購物慾望，並進一步優化內容和電子報的UX體驗。</p>
-                    </div><!--RWD-->
-                    <div class="column_3" style="margin-bottom: 8%;"><img src="images/newspaper_kv.png" class="img-fluid"></div><!--RWD-->
-                    
-                    <div class="column" style="margin-bottom: 2%;"><img src="images/asian.png" class="img-fluid"></div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Persona</div>                                        
-                        <div class="big_title">目標受眾</div>  
-<p class="p_content">喜歡:<br>藝術、設計和人文、擴展自已看待事情的視野和深度、關心社會議題和國際情勢，對生活抱著正面態度，注重生活品質，喜歡有質感的生活格調。
-                    <div style=" display: flex; margin:2% 0% 0% 0%;">                           
-                        <div class="head_content" style="width: 45%; margin-right: 10%; line-height: 1.8rem;"><b>到誠品線上購物的理由:</b><br>
-                            1.網站視覺設計漂亮<br>
-                            2.活動企劃和文案很有趣<br>
-                            3.原本就是實體店面的顧客<br>
-                            4.支持誠品的理念</div>
-                        <div class="head_content" style="width: 45%; line-height: 1.8rem;"><b>希望誠品線上改進的地方:</b><br>                                    
-                            1.提供較多折扣和優惠<br>
-                            2.增加商品的描述<br>
-                            3.觀看購買者的評價和感想<br>
-                        </div>
-                    </div></p></div><!--H_RWD-->
-                    <div class="clear"></div>
-
-                    <div class="column_2" style="margin-bottom: 8%;">
-                        <div class="s_title">Brand Values & Persona Needs</div>   
-                        <div class="big_title">融合品牌價值和使用者的需求</div>    
-                        <p class="p_content">在瞭解此電子報的目的後，先以Persona的角度來和專案經理討論版面的規劃、呈現的內容和視覺的風格，每一個細小的設計都要把使用者放在心上來思考並詢問自己，使用者想看到什麼？誠品線上能提供什麼給他們？</p>
-                    </div><!--RWD-->
-
-                    <div class="column_2" style="margin-bottom: 8%;">
-                        <div class="s_title">Brand Concept</div>
-                        <div class="big_title">品牌核心價值</div>
-                        <p class="p_content">Persona到誠品線上購物的原因為支持其品牌核心價值(人文、藝術、創意)，因此不論是視覺上或是Email內容上都需將人文、藝術、創意納入考量，此外使用者也提到喜歡“積極正面生的活態度”和“深度的內容”，因此在文案的語調和畫面構成上也呈現正面光明的生活態度感，而為了增加內容的深度，設置了深入探討藝術的專欄讓消費者閱讀。</p>
-                    </div><!--RWD-->
-
-                    <div class="column" style="margin-bottom: 2%;"><img src="images/Roboto.png" class="img-fluid"></div><!--H_RWD-->                            
-                    <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Typography</div>
-                        <div class="big_title">字體選擇</div>        
-<p class="p_content">主視覺和標體選用日本字體做搭配，讓整個畫面更融合，並營造出典雅的份圍，而為了讓讀者可以輕鬆閱讀和在各個系統上皆可輕鬆閱讀，內文選用了可讀性較高的字體Robor Regular。</p> 
-                        </div><!--H_RWD-->
-                    <div class="clear"></div>
-                           
-                    <div class="column" style="margin-bottom: 8%;">
-                        <div class="s_title">Visual & Colors</div>
-                        <div class="big_title">視覺風格與色調</div>    
-<p class="p_content">顏色上採用象徵光明的溫暖黃色調，當使用者接收到此電子信時能感到生命的光輝與燦爛，視覺則以文藝復興時代為發想，而為了帶領讀者深入探討藝術，畫面上置入古典元素來讓讀者了解，即使是現代藝術派系，也是經由研讀經典獲得啟發而創造出來的。</p> 
-                        </div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 8%;"><img src="images/newspaper_color.png" class="img-fluid"></div><!--H_RWD--> 
-                    <div class="clear"></div>
-                            
-                    <div class="column_2" style="margin-bottom: 2%;">
-                        <div class="s_title">Details</div>   
-                        <div class="big_title">UX細節</div> 
-                    </div><!--RWD-->
-                    <div class="column_3" style="margin-bottom: 8%;"><img src="images/mail.png" class="img-fluid"></div><!--RWD-->
-
-                    <div class="column" style="margin-bottom: 8%; background-color: #F2F2F2; border-radius: 10px;" >
-                        <div style="padding:20px 0px 0 20px;" class="s_title">Reflection</div>  
-                        <div style="padding-left: 20px;" class="big_title">回顧</div>       
-<p class="p_content" style="padding: 0 20px 20px 20px;">2015年時，超過65%的台灣人使用電腦閱讀電子郵件，因此在和PM討論過後決定此電子郵件仍以電腦版為主，但到了2018年，使用行動裝置來閱讀電子郵件的台灣人數攀升數倍，若此電子郵件要重新設計的話，在UI設計上會優先考量到手機版，而其內容文字也會大幅減少，以防在手機版時難以閱讀。</p> 
-                        </div><!--H_RWD-->
-                    <div class="column" style="margin-bottom: 8%;"><img src="images/phone.png" class="img-fluid"></div><!--H_RWD-->
-                    <div class="clear"></div>                
+                    </div>
                 </div>
             </div>
         </div>
-        
-
-        <a href="#popup1"  title="AboutMe" class="button" id="mail_01"></a>
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <div class="head">
-                    <h2>Hi there</h2>
-                    <a class="close">&times;</a>
-                </div>
-                <div class="content">
-                    <div><p>謝謝你造訪我的作品集網站，想知道我的經驗和專長，歡迎觀看我的<a href="https://www.linkedin.com/in/ting-ting-kao-058339161/" target="_blank" title="Linkedin">LinkedIn</a>
-                    頁面，在此，我想跟你分享我的興趣和個人特質，讓你更認識我一點。<br><br>
-                    <p>我是個渴求知識的人。透過閱讀專欄報導和收聽知識型的Podcast節目，我能更容易了解事件的脈絡、
-                    利益關係人的想法和觀點。而我也會主動搜尋相關事件人事物的背景和歷 史脈絡，幫助我更全面的看
-                    待每一件事。<br><br>
-                    在家當個廢青很不錯。但我更喜歡上健身房重訓、出外騎腳踏車、爬山、攀岩和嘗試不同的極限運動，
-                    運動不但幫助我放鬆，也培養我堅強的意志力!每次在工作上遇到挫折時我都會鼓勵自己，之前都經歷
-                    許多挑戰了，還怕這小事!!<br><br>
-                    同時我也積極參與UI/UX相關的課程、研討會等。並且研讀工作相關的書籍。當聽到別人分享 自身
-                    經驗時，我都感到很開心，因為這幫助我用不同人的角度和思維去思考，在工作中，很多時候需要的是
-                    同理心，再傾聽和瞭解對方的想法後，才能進一步去思考對方的需求和問題，並獲得信任，然後提出有
-                    價值的反饋和建議。<br><br>
-                    朋友都說我是個善於傾聽、安慰和引導別人且內心溫柔善良的人。當然我不完美，很常有冒牌者症候群，
-                    有時也會膽怯和拖延，所以我都會給自己設定時間和目標，若是結果不如預期中美好，我會詢問朋友、找
-                    尋資料和思考如何做得更好，因為人生沒有標準答案，唯有發展出自己的策略與對應方案。然後不斷的迭代與測試。</p></div>
+    </section>
+    <section class="section_info section_uiux">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <h2 class="item item_title" data-aos="fade-up">
+                        <p class="main_title">
+                            <img class="icon" src="images/icon_h2-uiux.svg" alt="">
+                            <span>UI/UX Case Study</span>
+                        </p>
+                    </h2>
+                    <div class="item item_info" data-aos="fade-up">
+                        <p>
+                            I started my career as a UI designer in a small digital marketing agency, a few years later, I became a senior UI designer at the largest retail chain bookstores in Taiwan. Now, I'm a product designer, my job is to identify the users' goals and to create flowcharts, wireframes and interactive prototypes for the product or service, then build a positive and consistent brand image and communicate the right information to the users.
+                        </p>
+                    </div>
+                    <div class="item item_slide" data-aos="fade-up">
+                        <a href="#" class="btn slide_item">
+                            <div class="slide_pic">
+                                <img class="lazyload" src="images/img_uiux-Ai.jpg" alt="">
+                            </div>
+                            <h3 class="title">
+                                <span>AI-hospital ReferralAI-hospital Referral</span>
+                            </h3>
+                        </a>
+                        <a href="#" class="btn slide_item">
+                            <div class="slide_pic">
+                                <img class="lazyload" src="images/img_uiux-Anota.jpg" alt="">
+                            </div>                   
+                            <h3 class="title">
+                                <span>AI-hospital ReferralAI-hospital Referral</span>
+                            </h3>
+                        </a>
+                        <a href="#" class="btn slide_item">
+                            <div class="slide_pic">
+                                <img class="lazyload" src="images/img_uiux-Portfolio.jpg" alt="">
+                            </div>
+                            <h3 class="title">
+                                <span>AI-hospital ReferralAI-hospital Referral</span>
+                            </h3>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </div>    
-
-    <div class="row justify-content-center">
-        <div class="col" style="outline: none;"><img src="images/GrandFloorImage.png" class="img-fluid"></div>
-    </div><!--row-->
-
-</div><!--grandfloor ends-->
-  
-        <div id="pane-1" class="panel"><!--this is the first taken starts-->
-            <div class="row justify-content-start">
-                <div class="col-2"></div>
-                <div class="col-10"><img src="images/DecorateLineUp.svg" class="img-fluid"></div>
-            </div> <!--Up Decoration--> 
-
-            
-            <div class="row justify-content-start">
-                <div class="col-12">
-                    <div class="guidebtn">
-                        <span tooltip="for English" flow="right"><a href="https://tingtingkao.github.io/tingportfolio/"><span class="material-icons" style="margin-right:8px; line-height: 24px;">language</span>for English</a></span>
-                    </div><!--guidebtn--> 
+        <div class="dec_bg">
+            <div class="dec_island island_hongkong" data-aos="fade-up">
+                <div class="btn_island">
+                    <a class="btn btn_map" href="javascript:void(0);">
+                        <div class="icon" data-aos="fade-up">
+                            <div class="icon_pic">
+                                <img src="images/icon_map-pin.svg" alt="">
+                            </div>
+                            <h3>Macao</h3>
+                        </div>
+                        <p>I lived in Macau shortly but it has an impact on me. Especially in food, I’m a big fan of Macanese Style Portuguese Chicken.</p>
+                    </a>
+                    <img src="images/dec_island_hongkong.png" alt="">
                 </div>
-            </div><!--guideBtn-->
- 
-            <div class="row justify-content-center"> 
-                <div class="col-12">
-                    <img src="images/KeyVision.png"  class="img-fluid">
+            </div>
+            <div class="dec_island island_japan" data-aos="fade-up">
+                <div class="btn_island">
+                    <a class="btn btn_map" href="javascript:void(0);">
+                        <div class="icon" data-aos="fade-up">
+                            <div class="icon_pic">
+                                <img src="images/icon_map-pin.svg" alt="">
+                            </div>
+                            <h3>Japan</h3>
+                        </div>
+                        <p>Been attended a design Workshop in Japan, I believe that design can impact environmental and social issues for good and my voice can reach others and potentially educate them.</p>
+                    </a>
+                    <img src="images/dec_island_japan.png" alt="">
                 </div>
-            </div><!--Kv-->
-
-            <div class="row justify-content-center"> 
-                <div class="col-12">
-                    <div class="skipbtn">
-                        <span tooltip="直接觀看作品集" flow="down"><a href="https://www.behance.net/tingting1117" target="_blank" title="Behance"><span class="material-icons" style="margin-right:8px; line-height: 24px;">play_circle_outline</span>Skip to See the Portfolio</a></span>
-                    </div><!--skipbtn--> 
+            </div>
+        </div>
+    </section>
+    <section class="section_info section_marketing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <h2 class="item item_title" data-aos="fade-up">
+                        <p class="main_title">
+                            <img class="icon" src="images/icon_h2-maketing.svg" alt="">
+                            <span>Marketing Case Study</span>
+                        </p>
+                    </h2>
+                    <div class="item item_info" data-aos="fade-up">
+                        <p>
+                            Time flies, I've been working in Taiwan for many years. I didn’t want to be used as a tool for adding ornaments to an item. I desire to take the problem-solving aspect of science. So I decided to study content and media strategy in the Netherlands. Learned from this course, Design is not simply about making things pretty just for the sake of it. Behavioral Science, understanding the user are keys to addressing a need or a problem. 
+                        </p>
+                    </div>
                 </div>
-            </div><!--SkipBtn-->
-
-            <div class="row justify-content-end">
-                <div class="col-6" style="margin-bottom:3%;"><img src="images/Deco_line_02.svg" class="img-fluid"></div>
-            </div><!--Up Decoration-->     
-        </div><!--this is the first taken ends-->
-    </div><!--container ends--> 
-
-    <div class="stickyBtn"><span class="material-icons" style="font-size: 3rem;">arrow_circle_up</span></div>
-</main>
-
-<!-- walkthrough -->
-<div id="walkthrough">
-	<div id="step1" style="display:none;">
-		<p class="tooltipTitle">Hi, This is Ting's Portfolio</p>
-        <p style="line-height: 2.2rem;">使用滑鼠滾輪往下滑，然後點選此按鈕 <img src="images/icon.svg"> 來觀看作品
-        </p>
-	</div>
-
-    <div id="step2" style="display:none;">
-        <p style="line-height: 2.2rem;">或點選畫面上閃動的元件來看LinkedIn、Medium和自我介紹</p>
-	</div>
-</div>
-
-<script type="text/javascript" src="scripts/jquery.pagewalkthrough.js"></script>
-<script type="text/javascript" src="page.js"></script>
+            </div>
+            <div class="row row_case">
+                <div class="col-10 col-md-5" data-aos="fade-up">
+                    <a href="#" class="item item_case btn" >
+                        <div class="pic">
+                            <img class="lazyload" src="images/img_marketing-Croatia.jpg" alt="">
+                        </div>
+                        <h3 class="title">Content and media strategy of The Croatian National Tourist Board</h3>
+                        <p data-aos="fade-up">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-10 col-md-5" data-aos="fade-up" data-aos-delay="50">
+                    <a href="#" class="item item_case btn">
+                        <div class="pic">
+                            <img class="lazyload" src="images/img_marketing-AIPoweredReferral.jpg" alt="">
+                        </div>
+                        <h3 class="title">Content and media strategy of The Croatian National Tourist Board</h3>
+                        <p data-aos="fade-up" data-aos-delay="50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-10 col-md-5" data-aos="fade-up">
+                    <a href="#" class="item item_case btn" >
+                        <div class="pic">
+                            <img class="lazyload" src="images/img_marketing-E-NewsletterofEslite.jpg" alt="">
+                        </div>
+                        <h3 class="title">Content and media strategy of The Croatian National Tourist Board</h3>
+                        <p data-aos="fade-up">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-10 col-md-5" data-aos="fade-up" data-aos-delay="50">
+                    <a href="#" class="item item_case btn" >
+                        <div class="pic">
+                            <img class="lazyload" src="images/img_marketing-LandingPageofEslite.jpg" alt="">
+                        </div>
+                        <h3 class="title">Content and media strategy of The Croatian National Tourist Board</h3>
+                        <p data-aos="fade-up" data-aos-delay="50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis massa ultricies ullamcorper id nullam vitae.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dec_bg">
+            <div class="dec_island island_netherlands" data-aos="fade-up">
+                <div class="btn_island">
+                    <a class="btn btn_map" href="javascript:void(0);">
+                        <div class="icon" data-aos="fade-up">
+                            <div class="icon_pic">
+                                <img  src="images/icon_map-pin.svg" alt="">
+                            </div>
+                            <h3>Holland</h3>
+                        </div>
+                        <p>Communication isn't to maximize your gains. It's process to keep balance between me and my co-worker that I learn from Dutch.  </p>
+                    </a>
+                    <img class="lazyload" src="images/dec_island_netherlands.png" alt="">
+                </div>
+            </div>
+            <div class="dec_island island_taiwan" data-aos="fade-up">
+                <div class="btn_island">
+                    <a class="btn btn_map" href="javascript:void(0);">
+                        <div class="icon" data-aos="fade-up">
+                            <div class="icon_pic">
+                                <img  src="images/icon_map-pin.svg" alt="">
+                            </div>
+                            <h3>Taiwan</h3>
+                        </div>
+                        <p>Taiwanese love Japan and their design style. However, as a half Macaoese and half Taiwanese, I incorporate Japanese, European and Taiwanese style to make my own style.</p>
+                    </a>
+                    <img class="lazyload" src="images/dec_island_taiwan.png" alt="">
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="section_info section_media">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <div class="item item_media" data-aos="fade-up">
+                        <p>
+                            I have created many package designs and advertisements. Those are part of my experience and I've learned from them. If you're interested in it, please take a look at <a class="btn btn_link" href="https://www.behance.net/tingting1117" target="_blank" rel="noopener" >Behance</a> to see more.
+                        </p>
+                        <a class="btn btn_media" href="https://www.behance.net/tingting1117" target="_blank" rel="noopener">
+                            <span>Click here to</span>
+                            <div class="icon">
+                                <img src="images/icon_media-behance.svg" alt="behance">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item item_media" data-aos="fade-up">
+                        <p>
+                            My passion lies in being strong. “Failure is the first step towards success” I record the projects I've done, although that didn't release on the market. Those also remind me that "Relate to my co-workers, better communicate with them". And feel free to see my <a class="btn btn_link" href="https://medium.com/@tingtingkao" target="_blank" rel="noopener" >Medium</a> to see the seeds I've worked over it. 
+                        </p>
+                        <a class="btn btn_media" href="https://medium.com/@tingtingkao" target="_blank" rel="noopener">
+                            <span>Click here to</span>
+                            <div class="icon">
+                                <img src="images/icon_media-media.svg" alt="behance">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item item_media" data-aos="fade-up">
+                        <p>
+                            Other than designing tech products, I also like working out, outdoor cycling and cooking. Recently, I am keen on making exotic vegetable food, but I still love meat a lot! See more about me on <a class="btn btn_link" href="https://www.linkedin.com/in/ting-ting-kao-058339161/" target="_blank" rel="noopener" >Linkedin</a> or <a class="btn btn_link" href="mailto:tingting19871117@gmail.com" target="_blank" rel="noopener" >email me</a>.
+                        </p>
+                        <div class="btns">
+                            <a class="btn btn_media" href="https://www.linkedin.com/in/ting-ting-kao-058339161/" target="_blank" rel="noopener">
+                                <span>Click here to</span>
+                                <div class="icon">
+                                    <img src="images/icon_media-linkedin.svg" alt="behance">
+                                </div>
+                            </a>
+                            <a class="btn btn_media btn_circle" href="mailto:tingting19871117@gmail.com" target="_blank" rel="noopener">
+                                <div class="icon">
+                                    <img src="images/icon_meda-email.svg" alt="behance">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script> 
+   $(window).on("scroll", function () {
+         AOS.init();
+     });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.header_menu').addClass('is-active', 2000);
+                $('.btn_top').addClass('is-active', 2000);
+            } else {
+                $('.header_menu').removeClass('is-active', 600);
+                $('.btn_top').removeClass('is-active', 600);
+            }
+        });
+    });
+    $(document).ready(function(){
+      $('.item_slide').slick({
+        centerMode: true,
+        centerPadding: '33.33%',
+        slidesToShow: 1,
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '12%',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+    });
+    $(document).ready(function(){
+        $('.btn_buger').click(function(){
+            $('.item_menu').addClass('is-active');
+        });
+        $('.btn_close').click(function(){
+            $('.item_menu').removeClass('is-active');
+       });
+    });
+  </script>
+
 </html>
